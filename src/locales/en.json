@@ -1,0 +1,193 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "education": "Education",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Available for freelance work",
+    "title": "AI Engineer",
+    "subtitle": "& MLOps Specialist",
+    "description": "Building intelligent systems with LLMs, RAG, and cutting-edge AI technologies",
+    "viewWork": "View My Work",
+    "getInTouch": "Get in Touch"
+  },
+  "about": {
+    "label": "About Me",
+    "title": "Turning ideas into",
+    "titleHighlight": " intelligent systems",
+    "paragraph1": "I'm a Gen AI engineer on a mission to turn ideas into intelligent, creative systems. After five years exploring almost every corner of IT—from code and data to workflows and pipelines—I finally found my sweet spot: generative AI.",
+    "paragraph2": "This year, I've been all in, building, fine-tuning, and evaluating LLMs, designing systems that can think, create, and collaborate. I may not have papers to prove it, but I have years of real, hands-on experience, contributing to personal projects, local initiatives, and building things that actually work. I care deeply about understanding the full picture—how models behave, how they can fail, and how to make them reliable in the real world.",
+    "paragraph3": "I'm fascinated by the playground of LLMs, agents, and pipelines, and I'm always chasing ways to push AI further—safer, smarter, and more useful. If it involves Gen AI, experimentation, or imagining what's next, that's where you'll find me.",
+    "viewLinkedIn": "View LinkedIn Profile",
+    "cards": {
+      "aiml": {
+        "title": "AI/ML",
+        "description": "LLMs & RAG Expert"
+      },
+      "mlops": {
+        "title": "MLOps",
+        "description": "Pipeline Automation"
+      },
+      "cloud": {
+        "title": "Cloud",
+        "description": "OpenStack & K8s"
+      },
+      "certifications": {
+        "title": "10+",
+        "description": "Certifications"
+      }
+    }
+  },
+  "experience": {
+    "label": "Arkadia Heilbronn",
+    "title": "Apprenticeship Programs",
+    "description": "6-month intensive apprenticeship spanning AI, MLOps, and Cloud Engineering",
+    "readMore": "Read More",
+    "showLess": "Show Less",
+    "programs": [
+      {
+        "title": "AI Evaluation Engineer",
+        "duration": "Sep 2025 - Oct 2025 · 2 mos",
+        "company": "Arkadia Heilbronn",
+        "description": "Designed and implemented a complete automated evaluation suite for large language models. Curated domain-specific datasets, defined custom evaluation metrics, and built tests for bias, robustness, and real-world applicability. Developed a security benchmark for LLMs using open datasets from documented prompt injection and jailbreak attacks.",
+        "collaboration": "In collaboration with Aleph Alpha",
+        "tags": ["Benchmarking", "Metrics", "LLM Evaluation", "Security Testing"]
+      },
+      {
+        "title": "Cloud Engineer",
+        "duration": "Jul 2025 - Aug 2025 · 2 mos",
+        "company": "Arkadia Heilbronn",
+        "description": "Built IaaS foundation using OpenStack and developed PaaS layer with Kubernetes. Designed managed service product with auto-scaling, multi-region deployment, and infrastructure-as-code using Terraform. Built Vue.js-based web UI secured via JWT, and implemented observability with Prometheus and Grafana.",
+        "collaboration": "Mentored by Kevin & Florian",
+        "tags": ["OpenStack", "Kubernetes", "Terraform", "Vue.js", "Prometheus", "Grafana"]
+      },
+      {
+        "title": "Generative AI Engineer",
+        "duration": "Jun 2025 - Jul 2025 · 2 mos",
+        "company": "Arkadia Heilbronn",
+        "description": "Designed AI agent workflow using LangGraph and implemented RAG with vector stores for context-aware solutions. Enabled collaboration between agents and integrated components into a cohesive system demonstrating how LLM agents can work together dynamically.",
+        "collaboration": "Mentored by Tristan",
+        "tags": ["LLMs", "LangChain", "RAG", "LangGraph", "AI Agents"]
+      },
+      {
+        "title": "Machine Learning Engineer",
+        "duration": "May 2025 - Jun 2025 · 2 mos",
+        "company": "Arkadia Heilbronn",
+        "description": "Explored data relationships, trained ML models, deployed to MLflow, and automated workflows using Dagster for production-ready MLOps. Built a pipeline that triggers automatically upon arrival of new data—enabling a fully automated system.",
+        "collaboration": "",
+        "tags": ["Python", "MLflow", "Dagster", "Jupyter", "Scikit-Learn"]
+      }
+    ]
+  },
+  "projects": {
+    "label": "Featured Projects",
+    "title": "Portfolio",
+    "description": "Building innovative solutions across AI, MLOps, full-stack development, and cloud infrastructure",
+    "readMore": "Read More",
+    "showLess": "Show Less",
+    "madeFor": "Made for",
+    "items": [
+      {
+        "title": "42sports",
+        "category": "Full-Stack Web Application",
+        "description": "A full-stack web application built for managing sports tournaments and player statistics. It allows users to create, join, and follow sports events with real-time updates and interactive leaderboards.",
+        "madeFor": "42 Hackathon",
+        "tags": ["Django", "Python", "PostgreSQL", "REST API", "Docker"]
+      },
+      {
+        "title": "MLOps Pipeline",
+        "category": "MLOps Pipeline",
+        "description": "An end-to-end Machine Learning operations pipeline designed for production-grade model deployment. Integrates modular ML components to automate data preprocessing, training, evaluation, and monitoring workflows.",
+        "madeFor": "Arkadia",
+        "tags": ["Python", "MLflow", "Docker", "FastAPI", "Kubernetes"]
+      },
+      {
+        "title": "Web Game",
+        "category": "Multiplayer Gaming Platform",
+        "description": "A multiplayer online game platform combining real-time gaming with social networking features. Backend services manage matchmaking and game state synchronization in real time.",
+        "madeFor": "42 Heilbronn",
+        "tags": ["NestJS", "TypeScript", "WebSockets", "React", "OAuth2"]
+      },
+      {
+        "title": "Security Benchmark",
+        "category": "AI Safety Framework",
+        "description": "An AI safety evaluation framework aimed at assessing large language model robustness and compliance. Provides structured testing for evaluating model responses against rule-based criteria.",
+        "madeFor": "Aleph Alpha",
+        "tags": ["Python", "Transformers", "Hugging Face", "Streamlit"]
+      },
+      {
+        "title": "Go Web Service",
+        "category": "Cloud Infrastructure",
+        "description": "A cloud computing project implementing scalable infrastructure for an AI-driven application. Focuses on automated deployment, resilience testing, and service monitoring.",
+        "madeFor": "STACKIT",
+        "tags": ["Go", "Terraform", "Kubernetes", "Prometheus", "Grafana"]
+      },
+      {
+        "title": "AI Multi-Agent Workflow System",
+        "category": "AI Automation",
+        "description": "A comprehensive AI automation system using multiple coordinated agents to handle customer tickets and workflow routing. Leverages agent orchestration frameworks for autonomous collaboration.",
+        "madeFor": "Arkadia",
+        "tags": ["LangChain", "LangGraph", "Gemini", "FastAPI", "WebSocket"]
+      }
+    ]
+  },
+  "education": {
+    "label": "Education",
+    "title": "Academic Background",
+    "description": "Strong foundation in IT, mathematics, and computer science",
+    "items": [
+      {
+        "institution": "42 Heilbronn",
+        "degree": "IT",
+        "duration": "March 2022 - March 2024"
+      },
+      {
+        "institution": "Université Mohammed Premier Oujda",
+        "degree": "Bachelor of Technology - Mathematics & Computer Science",
+        "duration": "September 2014 - July 2015"
+      },
+      {
+        "institution": "Lycee Omar Ibn Abdelaziz Oujda",
+        "degree": "CPGE - Industrial Science & Technology",
+        "duration": "September 2012 - July 2014"
+      }
+    ]
+  },
+  "skills": {
+    "label": "Expertise",
+    "title": "Technical Stack",
+    "description": "Expertise in AI, MLOps, cloud infrastructure, and full-stack development",
+    "items": [
+      "Python", "LLMs", "RAG", "Prompt Engineering",
+      "LangGraph", "MLflow", "Dagster", "OpenStack",
+      "Kubernetes", "Terraform", "Vue.js", "Docker",
+      "Prometheus", "Grafana", "C", "JavaScript",
+      "Jupyter", "Vector Stores", "JWT", "Machine Learning"
+    ]
+  },
+  "contact": {
+    "label": "Get in Touch",
+    "title": "Get In Touch",
+    "description": "Located in Heilbronn, Germany. Open to collaboration and new opportunities",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "Project inquiry",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your project...",
+      "send": "Send Message"
+    },
+    "location": "Heilbronn, Baden-Württemberg, Germany"
+  },
+  "footer": {
+    "copyright": "© 2025 Reda Doukali. All rights reserved.",
+    "tagline": "AI Engineer | MLOps Specialist | Cloud Architecture"
+  }
+}

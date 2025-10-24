@@ -1,73 +1,95 @@
-# Welcome to your Lovable project
+# Reda Doukali - Portfolio
 
-## Project info
+A professional portfolio showcasing my work as an AI Engineer & MLOps Specialist.
 
-**URL**: https://lovable.dev/projects/ff0a8c91-b3af-400b-a1f9-f4447e960b6a
+## 🚀 Features
 
-## How can I edit this code?
+- **Multi-language Support**: English, German, and French
+- **Responsive Design**: Mobile-first approach
+- **Project Showcase**: Featured projects with GitHub links
+- **Experience Timeline**: Arkadia apprenticeship programs
+- **Dark Theme**: Luxury gold-on-black aesthetic
+- **Contact Form**: Get in touch section
+- **SEO Optimized**: Meta tags and social sharing
 
-There are several ways of editing your application.
+## 🛠️ Tech Stack
 
-**Use Lovable**
+- **React 18** with TypeScript
+- **Vite** for fast builds
+- **Tailwind CSS** for styling
+- **Shadcn/ui** component library
+- **GitHub Pages** for hosting
+- **GitHub Actions** for CI/CD
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ff0a8c91-b3af-400b-a1f9-f4447e960b6a) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+## 📦 Installation
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Clone the repository
+git clone https://github.com/rdoukali42/portfolio.git
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to the project directory
+cd portfolio
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 🏗️ Build
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```sh
+# Build for production
+npm run build
 
-**Use GitHub Codespaces**
+# Preview production build
+npm run preview
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🌐 Deployment
 
-## What technologies are used for this project?
+This project is configured for automatic deployment to GitHub Pages.
 
-This project is built with:
+1. Push changes to the `main` branch
+2. GitHub Actions will automatically build and deploy
+3. Visit your site at: `https://rdoukali42.github.io/reda.doukali/`
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+For detailed deployment instructions, see [DEPLOYMENT.md](./DEPLOYMENT.md)
 
-## How can I deploy this project?
+## 📁 Project Structure
 
-Simply open [Lovable](https://lovable.dev/projects/ff0a8c91-b3af-400b-a1f9-f4447e960b6a) and click on Share -> Publish.
+```
+portfolio/
+├── src/
+│   ├── assets/          # Images and static files
+│   ├── components/      # React components
+│   ├── config/          # Configuration files
+│   ├── hooks/           # Custom React hooks
+│   ├── lib/             # Utility functions
+│   ├── locales/         # Internationalization files
+│   └── pages/           # Page components
+├── public/              # Public assets
+└── .github/             # GitHub Actions workflows
+```
 
-## Can I connect a custom domain to my Lovable project?
+## ⚙️ Configuration
 
-Yes, you can!
+- **Links**: Update all URLs in `src/config/links.ts`
+- **Content**: Edit translations in `src/locales/`
+- **Colors**: Customize theme in `src/index.css`
+- **Base Path**: Adjust in `vite.config.ts` for GitHub Pages
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📝 License
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+MIT License - feel free to use this portfolio as a template for your own!
+
+## 👤 Author
+
+**Reda Doukali**
+- GitHub: [@rdoukali42](https://github.com/rdoukali42)
+- LinkedIn: [rdoukali42](https://www.linkedin.com/in/rdoukali42/)
+
+---
+
+Built with ❤️ using React, TypeScript, and Tailwind CSS

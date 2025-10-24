@@ -4,6 +4,9 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useLocale } from "@/hooks/use-locale";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { socialLinks, projectLinks, companyLinks } from "@/config/links";
 import { 
   Github, 
   Linkedin, 
@@ -18,12 +21,18 @@ import {
   Sparkles
 } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
+import goldMe from "@/assets/gold_me.png";
+import sports42Img from "@/assets/42sports.png";
+import mlopsImg from "@/assets/mlopsPipe.png";
+import webGameImg from "@/assets/webGame.png";
+import securityBenchImg from "@/assets/securityBench.png";
+import goWebImg from "@/assets/goWeb.png";
+import aiMultiAgentImg from "@/assets/aiMultiAgents.png";
 
 const Index = () => {
   const [scrollY, setScrollY] = useState(0);
+  const [expandedItems, setExpandedItems] = useState<{ [key: string]: boolean }>({});
+  const { t } = useLocale();
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -31,60 +40,28 @@ const Index = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const skills = [
-    "Python", "LLMs", "RAG", "Prompt Engineering",
-    "LangGraph", "MLflow", "Dagster", "OpenStack",
-    "Kubernetes", "Terraform", "Vue.js", "Docker",
-    "Prometheus", "Grafana", "C", "JavaScript",
-    "Jupyter", "Vector Stores", "JWT", "Machine Learning"
-  ];
+  const toggleExpand = (section: string, index: number) => {
+    const key = `${section}-${index}`;
+    setExpandedItems(prev => ({ ...prev, [key]: !prev[key] }));
+  };
 
-  const experiences = [
-    {
-      title: "Cloud Engineer",
-      company: "Arkadia Heilbronn",
-      duration: "July 2025 - August 2025",
-      description: "Built IaaS foundation using OpenStack and developed PaaS layer with Kubernetes. Designed managed service product with auto-scaling and multi-region deployment.",
-      image: project1,
-      tags: ["OpenStack", "Kubernetes", "Terraform", "Vue.js"],
-      location: "Heilbronn, Germany"
-    },
-    {
-      title: "Generative AI Engineer",
-      company: "Arkadia Heilbronn",
-      duration: "June 2025 - July 2025",
-      description: "Designed AI agent workflow using LangGraph and implemented RAG with vector stores for context-aware solutions.",
-      image: project2,
-      tags: ["LangGraph", "RAG", "Vector Stores", "LLMs"],
-      location: "Heilbronn, Germany"
-    },
-    {
-      title: "Machine Learning Engineer",
-      company: "Arkadia Heilbronn",
-      duration: "May 2025 - June 2025",
-      description: "Explored data relationships, trained ML models, deployed to MLflow, and automated workflows using Dagster for production-ready MLOps.",
-      image: project3,
-      tags: ["Jupyter", "MLflow", "Dagster", "Python"],
-      location: "Heilbronn, Germany"
-    }
-  ];
+  const truncateText = (text: string, maxLength: number = 150) => {
+    if (text.length <= maxLength) return text;
+    return text.slice(0, maxLength) + "...";
+  };
 
-  const education = [
-    {
-      institution: "42 Heilbronn",
-      degree: "IT",
-      duration: "March 2022 - March 2024"
-    },
-    {
-      institution: "Université Mohammed Premier Oujda",
-      degree: "Bachelor of Technology - Mathematics & Computer Science",
-      duration: "September 2014 - July 2015"
-    },
-    {
-      institution: "Lycee Omar Ibn Abdelaziz Oujda",
-      degree: "CPGE - Industrial Science & Technology",
-      duration: "September 2012 - July 2014"
-    }
+  // Image mappings for projects (matches order in locale files)
+  // Order: 42sports, MLOps Pipeline, Web Game, Security Benchmark, Go Web Service, AI Multi-Agent
+  const projectImages = [sports42Img, mlopsImg, webGameImg, securityBenchImg, goWebImg, aiMultiAgentImg];
+  
+  // Project repository links (matches order in locale files)
+  const projectRepoLinks = [
+    projectLinks.sports42,
+    projectLinks.mlops,
+    projectLinks.webGame,
+    projectLinks.securityBenchmark,
+    projectLinks.goWebService,
+    projectLinks.aiMultiAgent
   ];
 
   return (
@@ -96,19 +73,21 @@ const Index = () => {
             Reda Doukali
           </h1>
           <div className="hidden md:flex items-center gap-8">
-            <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">About</a>
-            <a href="#experience" className="text-muted-foreground hover:text-foreground transition-colors">Experience</a>
-            <a href="#education" className="text-muted-foreground hover:text-foreground transition-colors">Education</a>
-            <a href="#skills" className="text-muted-foreground hover:text-foreground transition-colors">Skills</a>
-            <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact</a>
+            <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">{t.nav.about}</a>
+            <a href="#experience" className="text-muted-foreground hover:text-foreground transition-colors">{t.nav.experience}</a>
+            <a href="#projects" className="text-muted-foreground hover:text-foreground transition-colors">{t.nav.projects}</a>
+            <a href="#education" className="text-muted-foreground hover:text-foreground transition-colors">{t.nav.education}</a>
+            <a href="#skills" className="text-muted-foreground hover:text-foreground transition-colors">{t.nav.skills}</a>
+            <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">{t.nav.contact}</a>
           </div>
           <div className="flex items-center gap-3">
-            <a href="https://github.com/rdoukali" target="_blank" rel="noopener noreferrer">
+            <LanguageSwitcher />
+            <a href={socialLinks.github} target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon">
                 <Github className="w-5 h-5" />
               </Button>
             </a>
-            <a href="https://www.linkedin.com/in/rdoukali42/" target="_blank" rel="noopener noreferrer">
+            <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon">
                 <Linkedin className="w-5 h-5" />
               </Button>
@@ -120,50 +99,76 @@ const Index = () => {
       {/* Hero Section */}
       <section 
         className="relative min-h-screen flex items-center justify-center overflow-hidden"
-        style={{
-          backgroundImage: `url(${heroBg})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          transform: `translateY(${scrollY * 0.5}px)`
-        }}
       >
+        <div 
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `url(${heroBg})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            transform: `translateY(${scrollY * 0.5}px)`
+          }}
+        ></div>
         <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/70 to-background"></div>
         
-        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-          <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-card/30 backdrop-blur-sm border border-border/50 animate-fade-in">
-            <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm text-muted-foreground">Available for freelance work</span>
-          </div>
-          
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 animate-fade-in">
-            AI Engineer
-            <br />
-            <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]">
-              & MLOps Specialist
-            </span>
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto animate-fade-in-delay">
-            Building intelligent systems with LLMs, RAG, and cutting-edge AI technologies
-          </p>
-          
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-scale-in">
-            <a href="#experience">
-              <Button variant="gold" size="lg" className="group">
-                View My Work
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </a>
-            <a href="#contact">
-              <Button variant="glass" size="lg">
-                <Mail className="w-4 h-4" />
-                Get in Touch
-              </Button>
-            </a>
+        <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
+          <div className="grid md:grid-cols-12 gap-8 items-start min-h-screen">
+            {/* Text Content */}
+            <div className="md:col-span-12 text-center md:text-left order-2 md:order-1 relative z-0 flex flex-col justify-center min-h-screen py-20">
+              <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-card/30 backdrop-blur-sm border border-border/50 animate-fade-in w-fit">
+                <Sparkles className="w-4 h-4 text-primary" />
+                <span className="text-sm text-muted-foreground">{t.hero.badge}</span>
+              </div>
+              
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in">
+                {t.hero.title}
+                <br />
+                <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]">
+                  {t.hero.subtitle}
+                </span>
+              </h1>
+              
+              <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl animate-fade-in-delay">
+                {t.hero.description}
+              </p>
+              
+              <div className="flex flex-col sm:flex-row items-center md:items-start gap-4 animate-scale-in">
+                <a href="#projects">
+                  <Button variant="gold" size="lg" className="group">
+                    {t.hero.viewWork}
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </a>
+                <a href="#contact">
+                  <Button variant="glass" size="lg">
+                    <Mail className="w-4 h-4" />
+                    {t.hero.getInTouch}
+                  </Button>
+                </a>
+              </div>
+            </div>
+
+            {/* Professional Image - 3D Effect */}
+            <div className="md:col-span-5 md:absolute md:right-6 md:top-0 relative order-1 md:order-2 z-20 animate-slide-in-right pt-20 md:pt-32">
+              <div className="relative">
+                {/* Subtle glow behind image */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-accent/10 to-primary/20 blur-3xl rounded-full transform scale-110"></div>
+                
+                {/* The PNG image without background - positioned to overlap text */}
+                <img 
+                  src={goldMe} 
+                  alt="Reda Doukali - AI Engineer" 
+                  className="relative w-full max-w-md md:max-w-lg lg:max-w-xl h-auto object-contain drop-shadow-[0_20px_60px_rgba(255,193,7,0.3)] transform hover:scale-105 transition-transform duration-700"
+                  style={{
+                    filter: 'drop-shadow(0 25px 50px rgba(0, 0, 0, 0.5))'
+                  }}
+                />
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float z-30">
           <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex items-start justify-center p-2">
             <div className="w-1 h-2 bg-primary rounded-full animate-pulse"></div>
           </div>
@@ -177,21 +182,24 @@ const Index = () => {
             <div className="animate-slide-in-left">
               <div className="inline-flex items-center gap-2 mb-4 text-primary">
                 <Star className="w-5 h-5" />
-                <span className="text-sm font-medium tracking-wider uppercase">About Me</span>
+                <span className="text-sm font-medium tracking-wider uppercase">{t.about.label}</span>
               </div>
               <h2 className="text-5xl font-bold mb-6">
-                Turning AI concepts into
-                <span className="text-primary"> reality</span>
+                {t.about.title}
+                <span className="text-primary">{t.about.titleHighlight}</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
-                As a versatile Software Engineer and AI enthusiast, I specialize in building end-to-end AI solutions and automating workflows using modern MLOps practices. With a strong foundation in front-end development, UX design, Python, and data science, I bring creativity and problem-solving to every stage of a project.
+                {t.about.paragraph1}
+              </p>
+              <p className="text-lg text-muted-foreground mb-6">
+                {t.about.paragraph2}
               </p>
               <p className="text-lg text-muted-foreground mb-8">
-                My educational background spans IT and mathematics from 42 Heilbronn and Université Mohammed Premier Oujda. I'm passionate about staying up-to-date with the latest AI technologies and using them to build impactful, forward-thinking solutions.
+                {t.about.paragraph3}
               </p>
-              <a href="https://www.linkedin.com/in/rdoukali42/" target="_blank" rel="noopener noreferrer">
+              <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
                 <Button variant="gold">
-                  View LinkedIn Profile
+                  {t.about.viewLinkedIn}
                   <ArrowRight className="w-4 h-4" />
                 </Button>
               </a>
@@ -201,26 +209,26 @@ const Index = () => {
               <div className="grid grid-cols-2 gap-6">
                 <Card className="p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-300 animate-scale-in">
                   <Code2 className="w-12 h-12 text-primary mb-4" />
-                  <h3 className="text-4xl font-bold mb-2">AI/ML</h3>
-                  <p className="text-muted-foreground">LLMs & RAG Expert</p>
+                  <h3 className="text-4xl font-bold mb-2">{t.about.cards.aiml.title}</h3>
+                  <p className="text-muted-foreground">{t.about.cards.aiml.description}</p>
                 </Card>
                 
                 <Card className="p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-300 animate-scale-in" style={{ animationDelay: "0.1s" }}>
                   <Palette className="w-12 h-12 text-primary mb-4" />
-                  <h3 className="text-4xl font-bold mb-2">MLOps</h3>
-                  <p className="text-muted-foreground">Pipeline Automation</p>
+                  <h3 className="text-4xl font-bold mb-2">{t.about.cards.mlops.title}</h3>
+                  <p className="text-muted-foreground">{t.about.cards.mlops.description}</p>
                 </Card>
                 
                 <Card className="p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-300 animate-scale-in" style={{ animationDelay: "0.2s" }}>
                   <Smartphone className="w-12 h-12 text-primary mb-4" />
-                  <h3 className="text-4xl font-bold mb-2">Cloud</h3>
-                  <p className="text-muted-foreground">OpenStack & K8s</p>
+                  <h3 className="text-4xl font-bold mb-2">{t.about.cards.cloud.title}</h3>
+                  <p className="text-muted-foreground">{t.about.cards.cloud.description}</p>
                 </Card>
                 
                 <Card className="p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-300 animate-scale-in" style={{ animationDelay: "0.3s" }}>
                   <Sparkles className="w-12 h-12 text-primary mb-4" />
-                  <h3 className="text-4xl font-bold mb-2">10+</h3>
-                  <p className="text-muted-foreground">Certifications</p>
+                  <h3 className="text-4xl font-bold mb-2">{t.about.cards.certifications.title}</h3>
+                  <p className="text-muted-foreground">{t.about.cards.certifications.description}</p>
                 </Card>
               </div>
             </div>
@@ -228,94 +236,198 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Experience Section */}
-      <section id="experience" className="py-32 px-6">
+      {/* Experience Section - Arkadia Programs */}
+      <section id="experience" className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16 animate-fade-in">
+          <div className="text-center mb-12 animate-fade-in">
             <div className="inline-flex items-center gap-2 mb-4 text-primary">
               <Star className="w-5 h-5" />
-              <span className="text-sm font-medium tracking-wider uppercase">Professional Experience</span>
+              <span className="text-sm font-medium tracking-wider uppercase">{t.experience.label}</span>
             </div>
-            <h2 className="text-5xl font-bold mb-4">Work History</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Building cutting-edge AI solutions and cloud infrastructure
+            <h2 className="text-4xl font-bold mb-3">{t.experience.title}</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              {t.experience.description}
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {experiences.map((exp, index) => (
-              <Card 
-                key={index}
-                className="group overflow-hidden bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-500 animate-scale-in"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="relative overflow-hidden aspect-[4/3]">
-                  <img 
-                    src={exp.image} 
-                    alt={exp.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <Badge variant="secondary" className="bg-primary/20 border-primary/50 text-primary mb-2">
-                      {exp.duration}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {t.experience.programs.map((program, index) => {
+              const isExpanded = expandedItems[`experience-${index}`];
+              return (
+                <Card 
+                  key={index}
+                  className="group bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-500 animate-scale-in"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <div className="p-6">
+                    <Badge variant="secondary" className="bg-primary/30 border-primary text-primary font-semibold text-xs mb-4">
+                      {program.duration}
                     </Badge>
-                  </div>
-                </div>
-                
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">
-                    {exp.title}
-                  </h3>
-                  <p className="text-primary text-sm font-medium mb-3">{exp.company}</p>
-                  <p className="text-muted-foreground mb-4 text-sm">
-                    {exp.description}
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    {exp.tags.map((tag, tagIndex) => (
-                      <Badge 
-                        key={tagIndex} 
-                        variant="secondary"
-                        className="bg-card border border-border/50"
+                    
+                    <h3 className="text-xl font-bold mb-1 group-hover:text-primary transition-colors">
+                      {program.title}
+                    </h3>
+                    <p className="text-primary text-xs font-medium mb-3">{program.company}</p>
+                    <p className="text-muted-foreground mb-3 text-sm leading-relaxed">
+                      {isExpanded ? program.description : truncateText(program.description, 120)}
+                    </p>
+                    {program.description.length > 120 && (
+                      <Button 
+                        variant="link" 
+                        size="sm" 
+                        className="text-primary hover:text-primary/80 p-0 h-auto mb-3"
+                        onClick={() => toggleExpand('experience', index)}
                       >
-                        {tag}
-                      </Badge>
-                    ))}
+                        {isExpanded ? t.experience.showLess : t.experience.readMore}
+                        <ArrowRight className={`w-3 h-3 ml-1 transition-transform ${isExpanded ? 'rotate-90' : ''}`} />
+                      </Button>
+                    )}
+                    {isExpanded && program.collaboration && (
+                      <p className="text-xs text-primary/80 italic mb-3">
+                        {program.collaboration}
+                      </p>
+                    )}
+                    <div className="flex flex-wrap gap-1.5">
+                      {program.tags.slice(0, isExpanded ? program.tags.length : 3).map((tag, tagIndex) => (
+                        <Badge 
+                          key={tagIndex} 
+                          variant="secondary"
+                          className="bg-muted/50 border border-border text-foreground font-medium text-xs"
+                        >
+                          {tag}
+                        </Badge>
+                      ))}
+                      {!isExpanded && program.tags.length > 3 && (
+                        <Badge variant="secondary" className="bg-muted/50 border border-border text-foreground font-medium text-xs">
+                          +{program.tags.length - 3}
+                        </Badge>
+                      )}
+                    </div>
                   </div>
-                </div>
-              </Card>
-            ))}
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects" className="py-20 px-6 bg-gradient-to-b from-background to-card/20">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12 animate-fade-in">
+            <div className="inline-flex items-center gap-2 mb-4 text-primary">
+              <Star className="w-5 h-5" />
+              <span className="text-sm font-medium tracking-wider uppercase">{t.projects.label}</span>
+            </div>
+            <h2 className="text-4xl font-bold mb-3">{t.projects.title}</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              {t.projects.description}
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {t.projects.items.map((project, index) => {
+              const isExpanded = expandedItems[`project-${index}`];
+              return (
+                <Card 
+                  key={index}
+                  className="group overflow-hidden bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-500 animate-scale-in"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <div className="relative overflow-hidden aspect-video">
+                    <img 
+                      src={projectImages[index]} 
+                      alt={project.title}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
+                    <div className="absolute bottom-3 left-3 right-3">
+                      <Badge variant="secondary" className="bg-primary/30 border-primary text-primary font-semibold text-xs">
+                        {project.category}
+                      </Badge>
+                    </div>
+                  </div>
+                  
+                  <div className="p-5">
+                    <h3 className="text-xl font-bold mb-1 group-hover:text-primary transition-colors">
+                      {project.title}
+                    </h3>
+                    <p className="text-primary/70 text-xs font-medium mb-3 italic">
+                      {t.projects.madeFor} {project.madeFor}
+                    </p>
+                    <p className="text-muted-foreground mb-3 text-sm leading-relaxed">
+                      {isExpanded ? project.description : truncateText(project.description, 100)}
+                    </p>
+                    {project.description.length > 100 && (
+                      <Button 
+                        variant="link" 
+                        size="sm" 
+                        className="text-primary hover:text-primary/80 p-0 h-auto mb-3"
+                        onClick={() => toggleExpand('project', index)}
+                      >
+                        {isExpanded ? t.projects.showLess : t.projects.readMore}
+                        <ArrowRight className={`w-3 h-3 ml-1 transition-transform ${isExpanded ? 'rotate-90' : ''}`} />
+                      </Button>
+                    )}
+                    <div className="flex flex-wrap gap-1.5 mb-4">
+                      {project.tags.slice(0, isExpanded ? project.tags.length : 3).map((tag, tagIndex) => (
+                        <Badge 
+                          key={tagIndex} 
+                          variant="secondary"
+                          className="bg-muted/50 border border-border text-foreground font-medium text-xs"
+                        >
+                          {tag}
+                        </Badge>
+                      ))}
+                      {!isExpanded && project.tags.length > 3 && (
+                        <Badge variant="secondary" className="bg-muted/50 border border-border text-foreground font-medium text-xs">
+                          +{project.tags.length - 3}
+                        </Badge>
+                      )}
+                    </div>
+                    
+                    <a href={projectRepoLinks[index]} target="_blank" rel="noopener noreferrer" className="block">
+                      <Button variant="outline" size="sm" className="w-full group/btn border-primary/30 hover:bg-primary/10 hover:border-primary">
+                        <Github className="w-4 h-4" />
+                        View Repository
+                        <ExternalLink className="w-3 h-3 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
+                      </Button>
+                    </a>
+                  </div>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
 
       {/* Education Section */}
-      <section id="education" className="py-32 px-6 bg-gradient-to-b from-background to-card/20">
+      <section id="education" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 animate-fade-in">
+          <div className="text-center mb-12 animate-fade-in">
             <div className="inline-flex items-center gap-2 mb-4 text-primary">
               <Star className="w-5 h-5" />
-              <span className="text-sm font-medium tracking-wider uppercase">Education</span>
+              <span className="text-sm font-medium tracking-wider uppercase">{t.education.label}</span>
             </div>
-            <h2 className="text-5xl font-bold mb-4">Academic Background</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Strong foundation in IT, mathematics, and computer science
+            <h2 className="text-4xl font-bold mb-3">{t.education.title}</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              {t.education.description}
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {education.map((edu, index) => (
+          <div className="grid md:grid-cols-3 gap-6">
+            {t.education.items.map((edu, index) => (
               <Card 
                 key={index}
-                className="p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-300 animate-scale-in"
+                className="p-6 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-300 animate-scale-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="text-center">
-                  <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">
+                  <h3 className="text-lg font-bold mb-2 group-hover:text-primary transition-colors">
                     {edu.institution}
                   </h3>
-                  <p className="text-primary text-lg font-medium mb-2">{edu.degree}</p>
-                  <Badge variant="secondary" className="bg-card border border-border/50">
+                  <p className="text-primary text-sm font-medium mb-2">{edu.degree}</p>
+                  <Badge variant="secondary" className="bg-muted/50 border border-border text-foreground font-medium text-xs">
                     {edu.duration}
                   </Badge>
                 </div>
@@ -326,27 +438,27 @@ const Index = () => {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-32 px-6">
+      <section id="skills" className="py-20 px-6 bg-gradient-to-b from-background to-card/20">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 animate-fade-in">
+          <div className="text-center mb-12 animate-fade-in">
             <div className="inline-flex items-center gap-2 mb-4 text-primary">
               <Star className="w-5 h-5" />
-              <span className="text-sm font-medium tracking-wider uppercase">Expertise</span>
+              <span className="text-sm font-medium tracking-wider uppercase">{t.skills.label}</span>
             </div>
-            <h2 className="text-5xl font-bold mb-4">Technical Stack</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Expertise in AI, MLOps, cloud infrastructure, and full-stack development
+            <h2 className="text-4xl font-bold mb-3">{t.skills.title}</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              {t.skills.description}
             </p>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-4">
-            {skills.map((skill, index) => (
+          <div className="flex flex-wrap justify-center gap-3">
+            {t.skills.items.map((skill, index) => (
               <div
                 key={index}
-                className="group px-8 py-4 bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg hover:border-primary/50 hover:shadow-[0_0_30px_hsl(45_100%_51%/0.2)] transition-all duration-300 animate-scale-in"
+                className="group px-6 py-3 bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg hover:border-primary/50 hover:shadow-[0_0_30px_hsl(45_100%_51%/0.2)] transition-all duration-300 animate-scale-in"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
-                <span className="text-lg font-medium group-hover:text-primary transition-colors">
+                <span className="text-sm font-medium group-hover:text-primary transition-colors">
                   {skill}
                 </span>
               </div>
@@ -356,16 +468,16 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-32 px-6">
+      <section id="contact" className="py-20 px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16 animate-fade-in">
+          <div className="text-center mb-12 animate-fade-in">
             <div className="inline-flex items-center gap-2 mb-4 text-primary">
               <Star className="w-5 h-5" />
-              <span className="text-sm font-medium tracking-wider uppercase">Get in Touch</span>
+              <span className="text-sm font-medium tracking-wider uppercase">{t.contact.label}</span>
             </div>
-            <h2 className="text-5xl font-bold mb-4">Get In Touch</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Located in Heilbronn, Germany. Open to collaboration and new opportunities
+            <h2 className="text-4xl font-bold mb-3">{t.contact.title}</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              {t.contact.description}
             </p>
           </div>
 
@@ -373,54 +485,54 @@ const Index = () => {
             <form className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-medium mb-2">Name</label>
+                  <label className="block text-sm font-medium mb-2">{t.contact.form.name}</label>
                   <Input 
-                    placeholder="Your name" 
+                    placeholder={t.contact.form.namePlaceholder}
                     className="bg-background/50 border-border/50 focus:border-primary"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-2">Email</label>
+                  <label className="block text-sm font-medium mb-2">{t.contact.form.email}</label>
                   <Input 
                     type="email" 
-                    placeholder="your@email.com" 
+                    placeholder={t.contact.form.emailPlaceholder}
                     className="bg-background/50 border-border/50 focus:border-primary"
                   />
                 </div>
               </div>
               
               <div>
-                <label className="block text-sm font-medium mb-2">Subject</label>
+                <label className="block text-sm font-medium mb-2">{t.contact.form.subject}</label>
                 <Input 
-                  placeholder="Project inquiry" 
+                  placeholder={t.contact.form.subjectPlaceholder}
                   className="bg-background/50 border-border/50 focus:border-primary"
                 />
               </div>
               
               <div>
-                <label className="block text-sm font-medium mb-2">Message</label>
+                <label className="block text-sm font-medium mb-2">{t.contact.form.message}</label>
                 <Textarea 
-                  placeholder="Tell me about your project..." 
+                  placeholder={t.contact.form.messagePlaceholder}
                   rows={6}
                   className="bg-background/50 border-border/50 focus:border-primary resize-none"
                 />
               </div>
               
               <Button variant="gold" size="lg" className="w-full group">
-                Send Message
+                {t.contact.form.send}
                 <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
             </form>
           </Card>
 
           <div className="mt-12 flex justify-center gap-6 animate-fade-in-delay">
-            <a href="https://github.com/rdoukali" target="_blank" rel="noopener noreferrer">
+            <a href={socialLinks.github} target="_blank" rel="noopener noreferrer">
               <Button variant="glass" size="lg">
                 <Github className="w-5 h-5" />
                 GitHub
               </Button>
             </a>
-            <a href="https://www.linkedin.com/in/rdoukali42/" target="_blank" rel="noopener noreferrer">
+            <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
               <Button variant="glass" size="lg">
                 <Linkedin className="w-5 h-5" />
                 LinkedIn
@@ -431,7 +543,7 @@ const Index = () => {
           <div className="mt-8 text-center text-muted-foreground animate-fade-in-delay">
             <p className="flex items-center justify-center gap-2">
               <span>📍</span>
-              <span>Heilbronn, Baden-Württemberg, Germany</span>
+              <span>{t.contact.location}</span>
             </p>
           </div>
         </div>
@@ -440,8 +552,8 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-12 px-6 border-t border-border/50">
         <div className="max-w-7xl mx-auto text-center text-muted-foreground">
-          <p className="mb-2">© 2025 Reda Doukali. All rights reserved.</p>
-          <p className="text-sm">AI Engineer | MLOps Specialist | Cloud Architecture</p>
+          <p className="mb-2">{t.footer.copyright}</p>
+          <p className="text-sm">{t.footer.tagline}</p>
         </div>
       </footer>
     </div>

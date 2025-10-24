@@ -1,0 +1,193 @@
+{
+  "nav": {
+    "about": "À propos",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "education": "Formation",
+    "skills": "Compétences",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Disponible pour du travail freelance",
+    "title": "Ingénieur IA",
+    "subtitle": "& Spécialiste MLOps",
+    "description": "Création de systèmes intelligents avec LLMs, RAG et technologies IA de pointe",
+    "viewWork": "Voir mon travail",
+    "getInTouch": "Me contacter"
+  },
+  "about": {
+    "label": "À propos de moi",
+    "title": "Transformer les idées en",
+    "titleHighlight": " systèmes intelligents",
+    "paragraph1": "Je suis un ingénieur IA générative en mission pour transformer les idées en systèmes intelligents et créatifs. Après cinq ans à explorer presque tous les recoins de l'informatique—du code et des données aux workflows et pipelines—j'ai enfin trouvé mon point fort : l'IA générative.",
+    "paragraph2": "Cette année, je me suis pleinement investi dans la construction, l'ajustement et l'évaluation de LLMs, concevant des systèmes capables de penser, créer et collaborer. Je n'ai peut-être pas de publications pour le prouver, mais j'ai des années d'expérience pratique réelle, contribuant à des projets personnels, des initiatives locales et construisant des choses qui fonctionnent vraiment. Je me soucie profondément de comprendre l'ensemble du tableau—comment les modèles se comportent, comment ils peuvent échouer et comment les rendre fiables dans le monde réel.",
+    "paragraph3": "Je suis fasciné par le terrain de jeu des LLMs, agents et pipelines, et je cherche toujours des moyens de pousser l'IA plus loin—plus sûre, plus intelligente et plus utile. Si cela implique l'IA générative, l'expérimentation ou l'imagination de ce qui vient ensuite, c'est là que vous me trouverez.",
+    "viewLinkedIn": "Voir le profil LinkedIn",
+    "cards": {
+      "aiml": {
+        "title": "IA/ML",
+        "description": "Expert LLMs & RAG"
+      },
+      "mlops": {
+        "title": "MLOps",
+        "description": "Automatisation de pipelines"
+      },
+      "cloud": {
+        "title": "Cloud",
+        "description": "OpenStack & K8s"
+      },
+      "certifications": {
+        "title": "10+",
+        "description": "Certifications"
+      }
+    }
+  },
+  "experience": {
+    "label": "Arkadia Heilbronn",
+    "title": "Programmes d'apprentissage",
+    "description": "Apprentissage intensif de 6 mois couvrant l'IA, MLOps et le Cloud Engineering",
+    "readMore": "Lire la suite",
+    "showLess": "Afficher moins",
+    "programs": [
+      {
+        "title": "Ingénieur d'évaluation IA",
+        "duration": "Sep 2025 - Oct 2025 · 2 mois",
+        "company": "Arkadia Heilbronn",
+        "description": "Conçu et implémenté une suite d'évaluation automatisée complète pour les grands modèles de langage. Curation de datasets spécifiques au domaine, définition de métriques d'évaluation personnalisées et création de tests pour les biais, la robustesse et l'applicabilité réelle. Développement d'un benchmark de sécurité pour LLMs utilisant des datasets ouverts d'attaques documentées d'injection de prompts et de jailbreak.",
+        "collaboration": "En collaboration avec Aleph Alpha",
+        "tags": ["Benchmarking", "Métriques", "Évaluation LLM", "Tests de sécurité"]
+      },
+      {
+        "title": "Ingénieur Cloud",
+        "duration": "Jul 2025 - Aoû 2025 · 2 mois",
+        "company": "Arkadia Heilbronn",
+        "description": "Construction d'une fondation IaaS utilisant OpenStack et développement d'une couche PaaS avec Kubernetes. Conception de produit de service géré avec auto-scaling, déploiement multi-régions et infrastructure-as-code utilisant Terraform. Construction d'une interface web basée sur Vue.js sécurisée via JWT, et implémentation de l'observabilité avec Prometheus et Grafana.",
+        "collaboration": "Mentoré par Kevin & Florian",
+        "tags": ["OpenStack", "Kubernetes", "Terraform", "Vue.js", "Prometheus", "Grafana"]
+      },
+      {
+        "title": "Ingénieur IA générative",
+        "duration": "Jun 2025 - Jul 2025 · 2 mois",
+        "company": "Arkadia Heilbronn",
+        "description": "Conception de workflow d'agents IA utilisant LangGraph et implémentation de RAG avec des bases de vecteurs pour des solutions contextuelles. Activation de la collaboration entre agents et intégration de composants dans un système cohérent démontrant comment les agents LLM peuvent travailler ensemble dynamiquement.",
+        "collaboration": "Mentoré par Tristan",
+        "tags": ["LLMs", "LangChain", "RAG", "LangGraph", "Agents IA"]
+      },
+      {
+        "title": "Ingénieur Machine Learning",
+        "duration": "Mai 2025 - Jun 2025 · 2 mois",
+        "company": "Arkadia Heilbronn",
+        "description": "Exploration des relations de données, entraînement de modèles ML, déploiement vers MLflow et automatisation des workflows utilisant Dagster pour MLOps prêt pour la production. Construction d'un pipeline qui se déclenche automatiquement à l'arrivée de nouvelles données—permettant un système entièrement automatisé.",
+        "collaboration": "",
+        "tags": ["Python", "MLflow", "Dagster", "Jupyter", "Scikit-Learn"]
+      }
+    ]
+  },
+  "projects": {
+    "label": "Projets mis en avant",
+    "title": "Portfolio",
+    "description": "Création de solutions innovantes en IA, MLOps, développement full-stack et infrastructure cloud",
+    "readMore": "Lire la suite",
+    "showLess": "Afficher moins",
+    "madeFor": "Créé pour",
+    "items": [
+      {
+        "title": "42sports",
+        "category": "Application Web Full-Stack",
+        "description": "Une application web full-stack construite pour gérer les tournois sportifs et les statistiques des joueurs. Elle permet aux utilisateurs de créer, rejoindre et suivre des événements sportifs avec des mises à jour en temps réel et des classements interactifs.",
+        "madeFor": "42 Hackathon",
+        "tags": ["Django", "Python", "PostgreSQL", "REST API", "Docker"]
+      },
+      {
+        "title": "Pipeline MLOps",
+        "category": "Pipeline MLOps",
+        "description": "Un pipeline d'opérations Machine Learning de bout en bout conçu pour le déploiement de modèles de qualité production. Intègre des composants ML modulaires pour automatiser le prétraitement des données, l'entraînement, l'évaluation et les workflows de surveillance.",
+        "madeFor": "Arkadia",
+        "tags": ["Python", "MLflow", "Docker", "FastAPI", "Kubernetes"]
+      },
+      {
+        "title": "Jeu Web",
+        "category": "Plateforme de jeux multijoueurs",
+        "description": "Une plateforme de jeux en ligne multijoueurs combinant jeux en temps réel et fonctionnalités de réseau social. Les services backend gèrent le matchmaking et la synchronisation de l'état du jeu en temps réel.",
+        "madeFor": "42 Heilbronn",
+        "tags": ["NestJS", "TypeScript", "WebSockets", "React", "OAuth2"]
+      },
+      {
+        "title": "Benchmark de sécurité",
+        "category": "Framework de sécurité IA",
+        "description": "Un framework d'évaluation de la sécurité IA visant à évaluer la robustesse et la conformité des grands modèles de langage. Fournit des tests structurés pour évaluer les réponses du modèle par rapport à des critères basés sur des règles.",
+        "madeFor": "Aleph Alpha",
+        "tags": ["Python", "Transformers", "Hugging Face", "Streamlit"]
+      },
+      {
+        "title": "Service Web Go",
+        "category": "Infrastructure Cloud",
+        "description": "Un projet de cloud computing implémentant une infrastructure évolutive pour une application pilotée par l'IA. Met l'accent sur le déploiement automatisé, les tests de résilience et la surveillance des services.",
+        "madeFor": "STACKIT",
+        "tags": ["Go", "Terraform", "Kubernetes", "Prometheus", "Grafana"]
+      },
+      {
+        "title": "Système de workflow multi-agents IA",
+        "category": "Automatisation IA",
+        "description": "Un système d'automatisation IA complet utilisant plusieurs agents coordonnés pour gérer les tickets clients et le routage de workflow. Exploite les frameworks d'orchestration d'agents pour une collaboration autonome.",
+        "madeFor": "Arkadia",
+        "tags": ["LangChain", "LangGraph", "Gemini", "FastAPI", "WebSocket"]
+      }
+    ]
+  },
+  "education": {
+    "label": "Formation",
+    "title": "Parcours académique",
+    "description": "Solide fondation en informatique, mathématiques et sciences informatiques",
+    "items": [
+      {
+        "institution": "42 Heilbronn",
+        "degree": "Informatique",
+        "duration": "Mars 2022 - Mars 2024"
+      },
+      {
+        "institution": "Université Mohammed Premier Oujda",
+        "degree": "Licence en Technologie - Mathématiques & Informatique",
+        "duration": "Septembre 2014 - Juillet 2015"
+      },
+      {
+        "institution": "Lycée Omar Ibn Abdelaziz Oujda",
+        "degree": "CPGE - Sciences Industrielles & Technologie",
+        "duration": "Septembre 2012 - Juillet 2014"
+      }
+    ]
+  },
+  "skills": {
+    "label": "Expertise",
+    "title": "Stack technique",
+    "description": "Expertise en IA, MLOps, infrastructure cloud et développement full-stack",
+    "items": [
+      "Python", "LLMs", "RAG", "Prompt Engineering",
+      "LangGraph", "MLflow", "Dagster", "OpenStack",
+      "Kubernetes", "Terraform", "Vue.js", "Docker",
+      "Prometheus", "Grafana", "C", "JavaScript",
+      "Jupyter", "Bases de vecteurs", "JWT", "Machine Learning"
+    ]
+  },
+  "contact": {
+    "label": "Me contacter",
+    "title": "Me contacter",
+    "description": "Basé à Heilbronn, Allemagne. Ouvert à la collaboration et aux nouvelles opportunités",
+    "form": {
+      "name": "Nom",
+      "namePlaceholder": "Votre nom",
+      "email": "Email",
+      "emailPlaceholder": "votre@email.fr",
+      "subject": "Sujet",
+      "subjectPlaceholder": "Demande de projet",
+      "message": "Message",
+      "messagePlaceholder": "Parlez-moi de votre projet...",
+      "send": "Envoyer le message"
+    },
+    "location": "Heilbronn, Bade-Wurtemberg, Allemagne"
+  },
+  "footer": {
+    "copyright": "© 2025 Reda Doukali. Tous droits réservés.",
+    "tagline": "Ingénieur IA | Spécialiste MLOps | Architecture Cloud"
+  }
+}

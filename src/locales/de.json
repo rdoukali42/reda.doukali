@@ -1,0 +1,193 @@
+{
+  "nav": {
+    "about": "Über mich",
+    "experience": "Erfahrung",
+    "projects": "Projekte",
+    "education": "Ausbildung",
+    "skills": "Fähigkeiten",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "badge": "Verfügbar für freiberufliche Arbeit",
+    "title": "KI-Ingenieur",
+    "subtitle": "& MLOps-Spezialist",
+    "description": "Entwicklung intelligenter Systeme mit LLMs, RAG und modernsten KI-Technologien",
+    "viewWork": "Meine Arbeit ansehen",
+    "getInTouch": "Kontakt aufnehmen"
+  },
+  "about": {
+    "label": "Über mich",
+    "title": "Ideen in",
+    "titleHighlight": " intelligente Systeme verwandeln",
+    "paragraph1": "Ich bin ein Gen-KI-Ingenieur mit der Mission, Ideen in intelligente, kreative Systeme zu verwandeln. Nach fünf Jahren, in denen ich fast jeden Bereich der IT erkundet habe—von Code und Daten bis hin zu Workflows und Pipelines—habe ich endlich meinen Sweet Spot gefunden: generative KI.",
+    "paragraph2": "Dieses Jahr bin ich voll dabei: LLMs bauen, feinabstimmen und evaluieren, Systeme entwerfen, die denken, erschaffen und zusammenarbeiten können. Ich habe vielleicht keine Veröffentlichungen vorzuweisen, aber ich habe Jahre echter, praktischer Erfahrung, trage zu persönlichen Projekten und lokalen Initiativen bei und baue Dinge, die tatsächlich funktionieren. Mir liegt sehr daran, das Gesamtbild zu verstehen—wie Modelle sich verhalten, wie sie scheitern können und wie man sie in der realen Welt zuverlässig macht.",
+    "paragraph3": "Ich bin fasziniert vom Spielplatz der LLMs, Agenten und Pipelines und bin ständig auf der Suche nach Wegen, KI weiterzuentwickeln—sicherer, intelligenter und nützlicher. Wenn es um Gen-KI, Experimente oder die Vorstellung dessen geht, was als Nächstes kommt, dort werden Sie mich finden.",
+    "viewLinkedIn": "LinkedIn-Profil ansehen",
+    "cards": {
+      "aiml": {
+        "title": "KI/ML",
+        "description": "LLMs & RAG-Experte"
+      },
+      "mlops": {
+        "title": "MLOps",
+        "description": "Pipeline-Automatisierung"
+      },
+      "cloud": {
+        "title": "Cloud",
+        "description": "OpenStack & K8s"
+      },
+      "certifications": {
+        "title": "10+",
+        "description": "Zertifizierungen"
+      }
+    }
+  },
+  "experience": {
+    "label": "Arkadia Heilbronn",
+    "title": "Ausbildungsprogramme",
+    "description": "6-monatige intensive Ausbildung in KI, MLOps und Cloud Engineering",
+    "readMore": "Mehr lesen",
+    "showLess": "Weniger anzeigen",
+    "programs": [
+      {
+        "title": "KI-Evaluierungsingenieur",
+        "duration": "Sep 2025 - Okt 2025 · 2 Monate",
+        "company": "Arkadia Heilbronn",
+        "description": "Entwarf und implementierte eine vollständige automatisierte Evaluierungssuite für große Sprachmodelle. Kuratierte domänenspezifische Datensätze, definierte benutzerdefinierte Evaluierungsmetriken und entwickelte Tests für Bias, Robustheit und reale Anwendbarkeit. Entwickelte einen Sicherheits-Benchmark für LLMs unter Verwendung offener Datensätze aus dokumentierten Prompt-Injection- und Jailbreak-Angriffen.",
+        "collaboration": "In Zusammenarbeit mit Aleph Alpha",
+        "tags": ["Benchmarking", "Metriken", "LLM-Evaluierung", "Sicherheitstests"]
+      },
+      {
+        "title": "Cloud-Ingenieur",
+        "duration": "Jul 2025 - Aug 2025 · 2 Monate",
+        "company": "Arkadia Heilbronn",
+        "description": "Aufbau einer IaaS-Grundlage mit OpenStack und Entwicklung einer PaaS-Ebene mit Kubernetes. Entwarf verwaltete Serviceprodukte mit Auto-Scaling, Multi-Region-Bereitstellung und Infrastructure-as-Code mit Terraform. Erstellte eine Vue.js-basierte Web-UI, gesichert über JWT, und implementierte Observability mit Prometheus und Grafana.",
+        "collaboration": "Betreut von Kevin & Florian",
+        "tags": ["OpenStack", "Kubernetes", "Terraform", "Vue.js", "Prometheus", "Grafana"]
+      },
+      {
+        "title": "Generative KI-Ingenieur",
+        "duration": "Jun 2025 - Jul 2025 · 2 Monate",
+        "company": "Arkadia Heilbronn",
+        "description": "Entwarf KI-Agenten-Workflow mit LangGraph und implementierte RAG mit Vektorspeichern für kontextbewusste Lösungen. Ermöglichte die Zusammenarbeit zwischen Agenten und integrierte Komponenten in ein zusammenhängendes System, das zeigt, wie LLM-Agenten dynamisch zusammenarbeiten können.",
+        "collaboration": "Betreut von Tristan",
+        "tags": ["LLMs", "LangChain", "RAG", "LangGraph", "KI-Agenten"]
+      },
+      {
+        "title": "Machine Learning Ingenieur",
+        "duration": "Mai 2025 - Jun 2025 · 2 Monate",
+        "company": "Arkadia Heilbronn",
+        "description": "Erforschte Datenbeziehungen, trainierte ML-Modelle, stellte sie in MLflow bereit und automatisierte Workflows mit Dagster für produktionsreife MLOps. Erstellte eine Pipeline, die automatisch bei Eintreffen neuer Daten ausgelöst wird – ein vollautomatisches System.",
+        "collaboration": "",
+        "tags": ["Python", "MLflow", "Dagster", "Jupyter", "Scikit-Learn"]
+      }
+    ]
+  },
+  "projects": {
+    "label": "Vorgestellte Projekte",
+    "title": "Portfolio",
+    "description": "Entwicklung innovativer Lösungen in den Bereichen KI, MLOps, Full-Stack-Entwicklung und Cloud-Infrastruktur",
+    "readMore": "Mehr lesen",
+    "showLess": "Weniger anzeigen",
+    "madeFor": "Erstellt für",
+    "items": [
+      {
+        "title": "42sports",
+        "category": "Full-Stack-Webanwendung",
+        "description": "Eine Full-Stack-Webanwendung zur Verwaltung von Sportturnieren und Spielerstatistiken. Sie ermöglicht es Benutzern, Sportveranstaltungen zu erstellen, beizutreten und zu verfolgen, mit Echtzeit-Updates und interaktiven Bestenlisten.",
+        "madeFor": "42 Hackathon",
+        "tags": ["Django", "Python", "PostgreSQL", "REST API", "Docker"]
+      },
+      {
+        "title": "MLOps Pipeline",
+        "category": "MLOps-Pipeline",
+        "description": "Eine End-to-End-Machine-Learning-Operations-Pipeline für produktionsreife Modellbereitstellung. Integriert modulare ML-Komponenten zur Automatisierung von Datenvorverarbeitung, Training, Evaluierung und Überwachungs-Workflows.",
+        "madeFor": "Arkadia",
+        "tags": ["Python", "MLflow", "Docker", "FastAPI", "Kubernetes"]
+      },
+      {
+        "title": "Web Game",
+        "category": "Multiplayer-Gaming-Plattform",
+        "description": "Eine Multiplayer-Online-Gaming-Plattform, die Echtzeit-Gaming mit Social-Networking-Funktionen kombiniert. Backend-Dienste verwalten Matchmaking und Spielzustandssynchronisation in Echtzeit.",
+        "madeFor": "42 Heilbronn",
+        "tags": ["NestJS", "TypeScript", "WebSockets", "React", "OAuth2"]
+      },
+      {
+        "title": "Security Benchmark",
+        "category": "KI-Sicherheits-Framework",
+        "description": "Ein KI-Sicherheits-Evaluierungs-Framework zur Bewertung der Robustheit und Compliance großer Sprachmodelle. Bietet strukturierte Tests zur Evaluierung von Modellantworten gegen regelbasierte Kriterien.",
+        "madeFor": "Aleph Alpha",
+        "tags": ["Python", "Transformers", "Hugging Face", "Streamlit"]
+      },
+      {
+        "title": "Go Web Service",
+        "category": "Cloud-Infrastruktur",
+        "description": "Ein Cloud-Computing-Projekt zur Implementierung skalierbarer Infrastruktur für eine KI-gesteuerte Anwendung. Fokus auf automatisierter Bereitstellung, Resilienztests und Service-Überwachung.",
+        "madeFor": "STACKIT",
+        "tags": ["Go", "Terraform", "Kubernetes", "Prometheus", "Grafana"]
+      },
+      {
+        "title": "KI-Multi-Agenten-Workflow-System",
+        "category": "KI-Automatisierung",
+        "description": "Ein umfassendes KI-Automatisierungssystem mit mehreren koordinierten Agenten zur Bearbeitung von Kundentickets und Workflow-Routing. Nutzt Agenten-Orchestrierungs-Frameworks für autonome Zusammenarbeit.",
+        "madeFor": "Arkadia",
+        "tags": ["LangChain", "LangGraph", "Gemini", "FastAPI", "WebSocket"]
+      }
+    ]
+  },
+  "education": {
+    "label": "Ausbildung",
+    "title": "Akademischer Hintergrund",
+    "description": "Solides Fundament in IT, Mathematik und Informatik",
+    "items": [
+      {
+        "institution": "42 Heilbronn",
+        "degree": "IT",
+        "duration": "März 2022 - März 2024"
+      },
+      {
+        "institution": "Université Mohammed Premier Oujda",
+        "degree": "Bachelor of Technology - Mathematik & Informatik",
+        "duration": "September 2014 - Juli 2015"
+      },
+      {
+        "institution": "Lycee Omar Ibn Abdelaziz Oujda",
+        "degree": "CPGE - Industriewissenschaft & Technologie",
+        "duration": "September 2012 - Juli 2014"
+      }
+    ]
+  },
+  "skills": {
+    "label": "Expertise",
+    "title": "Technischer Stack",
+    "description": "Expertise in KI, MLOps, Cloud-Infrastruktur und Full-Stack-Entwicklung",
+    "items": [
+      "Python", "LLMs", "RAG", "Prompt Engineering",
+      "LangGraph", "MLflow", "Dagster", "OpenStack",
+      "Kubernetes", "Terraform", "Vue.js", "Docker",
+      "Prometheus", "Grafana", "C", "JavaScript",
+      "Jupyter", "Vektorspeicher", "JWT", "Machine Learning"
+    ]
+  },
+  "contact": {
+    "label": "Kontakt aufnehmen",
+    "title": "Kontakt aufnehmen",
+    "description": "Standort: Heilbronn, Deutschland. Offen für Zusammenarbeit und neue Möglichkeiten",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Ihr Name",
+      "email": "E-Mail",
+      "emailPlaceholder": "ihre@email.de",
+      "subject": "Betreff",
+      "subjectPlaceholder": "Projektanfrage",
+      "message": "Nachricht",
+      "messagePlaceholder": "Erzählen Sie mir von Ihrem Projekt...",
+      "send": "Nachricht senden"
+    },
+    "location": "Heilbronn, Baden-Württemberg, Deutschland"
+  },
+  "footer": {
+    "copyright": "© 2025 Reda Doukali. Alle Rechte vorbehalten.",
+    "tagline": "KI-Ingenieur | MLOps-Spezialist | Cloud-Architektur"
+  }
+}
