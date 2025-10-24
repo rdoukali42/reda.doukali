@@ -5,7 +5,7 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   // Base path for GitHub Pages - must match repository name
-  base: mode === 'production' ? '/gilded-canvas-code/' : '/',
+  base: mode === 'production' ? '/reda.doukali/' : '/',
   server: {
     host: "::",
     port: 8080,
