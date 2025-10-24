@@ -9,8 +9,8 @@
   },
   "hero": {
     "badge": "Verfügbar für freiberufliche Arbeit",
-    "title": "KI-Ingenieur",
-    "subtitle": "& MLOps-Spezialist",
+    "title": "GenAI-Ingenieur",
+    "subtitle": "& Softwareentwickler",
     "description": "Entwicklung intelligenter Systeme mit LLMs, RAG und modernsten KI-Technologien",
     "viewWork": "Meine Arbeit ansehen",
     "getInTouch": "Kontakt aufnehmen"
@@ -19,9 +19,9 @@
     "label": "Über mich",
     "title": "Ideen in",
     "titleHighlight": " intelligente Systeme verwandeln",
-    "paragraph1": "Ich bin ein Gen-KI-Ingenieur mit der Mission, Ideen in intelligente, kreative Systeme zu verwandeln. Nach fünf Jahren, in denen ich fast jeden Bereich der IT erkundet habe—von Code und Daten bis hin zu Workflows und Pipelines—habe ich endlich meinen Sweet Spot gefunden: generative KI.",
-    "paragraph2": "Dieses Jahr bin ich voll dabei: LLMs bauen, feinabstimmen und evaluieren, Systeme entwerfen, die denken, erschaffen und zusammenarbeiten können. Ich habe vielleicht keine Veröffentlichungen vorzuweisen, aber ich habe Jahre echter, praktischer Erfahrung, trage zu persönlichen Projekten und lokalen Initiativen bei und baue Dinge, die tatsächlich funktionieren. Mir liegt sehr daran, das Gesamtbild zu verstehen—wie Modelle sich verhalten, wie sie scheitern können und wie man sie in der realen Welt zuverlässig macht.",
-    "paragraph3": "Ich bin fasziniert vom Spielplatz der LLMs, Agenten und Pipelines und bin ständig auf der Suche nach Wegen, KI weiterzuentwickeln—sicherer, intelligenter und nützlicher. Wenn es um Gen-KI, Experimente oder die Vorstellung dessen geht, was als Nächstes kommt, dort werden Sie mich finden.",
+    "paragraph1": "Ich bin ein Gen-KI-Ingenieur mit der Mission, Ideen in intelligente, kreative Systeme zu verwandeln. Nach fünf Jahren, in denen ich fast jeden Bereich der IT erkundet habe; von Code und Daten bis hin zu Workflows und Pipelines; habe ich endlich meinen Sweet Spot gefunden: generative KI.",
+    "paragraph2": "Dieses Jahr bin ich voll dabei: LLMs bauen, feinabstimmen und evaluieren, Systeme entwerfen, die denken, erschaffen und zusammenarbeiten können. Ich habe vielleicht keine Veröffentlichungen vorzuweisen, aber ich habe Jahre echter, praktischer Erfahrung, trage zu persönlichen Projekten und lokalen Initiativen bei und baue Dinge, die tatsächlich funktionieren. Mir liegt sehr daran, das Gesamtbild zu verstehen; wie Modelle sich verhalten, wie sie scheitern können und wie man sie in der realen Welt zuverlässig macht.",
+    "paragraph3": "Ich bin fasziniert vom Spielplatz der LLMs, Agenten und Pipelines und bin ständig auf der Suche nach Wegen, KI weiterzuentwickeln; sicherer, intelligenter und nützlicher. Wenn es um Gen-KI, Experimente oder die Vorstellung dessen geht, was als Nächstes kommt, dort werden Sie mich finden.",
     "viewLinkedIn": "LinkedIn-Profil ansehen",
     "cards": {
       "aiml": {
@@ -85,7 +85,7 @@
   },
   "projects": {
     "label": "Vorgestellte Projekte",
-    "title": "Portfolio",
+    "title": "Github",
     "description": "Entwicklung innovativer Lösungen in den Bereichen KI, MLOps, Full-Stack-Entwicklung und Cloud-Infrastruktur",
     "readMore": "Mehr lesen",
     "showLess": "Weniger anzeigen",
@@ -121,10 +121,10 @@
       },
       {
         "title": "Go Web Service",
-        "category": "Cloud-Infrastruktur",
-        "description": "Ein Cloud-Computing-Projekt zur Implementierung skalierbarer Infrastruktur für eine KI-gesteuerte Anwendung. Fokus auf automatisierter Bereitstellung, Resilienztests und Service-Überwachung.",
+        "category": "Benachrichtigungs-Gateway",
+        "description": "Ein Go-Webservice, der Benachrichtigungen per HTTP POST empfängt, validiert und 'Warning'-Benachrichtigungen an Google Chat weiterleitet. Bietet REST-API-Validierung, In-Memory-Speicherung, Filterlogik und Health-Check-Endpunkte.",
         "madeFor": "STACKIT",
-        "tags": ["Go", "Terraform", "Kubernetes", "Prometheus", "Grafana"]
+        "tags": ["Go", "REST API", "Google Chat", "HTTP", "Webhooks"]
       },
       {
         "title": "KI-Multi-Agenten-Workflow-System",
@@ -188,6 +188,6 @@
   },
   "footer": {
     "copyright": "© 2025 Reda Doukali. Alle Rechte vorbehalten.",
-    "tagline": "KI-Ingenieur | MLOps-Spezialist | Cloud-Architektur"
+    "tagline": "GenAI-Ingenieur | Softwareentwickler | Cloud-Architektur"
   }
 }

@@ -9,8 +9,8 @@
   },
   "hero": {
     "badge": "Available for freelance work",
-    "title": "AI Engineer",
-    "subtitle": "& MLOps Specialist",
+    "title": "GenAI Engineer",
+    "subtitle": "& Software Developer",
     "description": "Building intelligent systems with LLMs, RAG, and cutting-edge AI technologies",
     "viewWork": "View My Work",
     "getInTouch": "Get in Touch"
@@ -19,9 +19,9 @@
     "label": "About Me",
     "title": "Turning ideas into",
     "titleHighlight": " intelligent systems",
-    "paragraph1": "I'm a Gen AI engineer on a mission to turn ideas into intelligent, creative systems. After five years exploring almost every corner of IT—from code and data to workflows and pipelines—I finally found my sweet spot: generative AI.",
-    "paragraph2": "This year, I've been all in, building, fine-tuning, and evaluating LLMs, designing systems that can think, create, and collaborate. I may not have papers to prove it, but I have years of real, hands-on experience, contributing to personal projects, local initiatives, and building things that actually work. I care deeply about understanding the full picture—how models behave, how they can fail, and how to make them reliable in the real world.",
-    "paragraph3": "I'm fascinated by the playground of LLMs, agents, and pipelines, and I'm always chasing ways to push AI further—safer, smarter, and more useful. If it involves Gen AI, experimentation, or imagining what's next, that's where you'll find me.",
+    "paragraph1": "I'm a Gen AI engineer on a mission to turn ideas into intelligent, creative systems. After five years exploring almost every corner of IT; from code and data to workflows and pipelines; I finally found my sweet spot: generative AI.",
+    "paragraph2": "This year, I've been all in, building, fine-tuning, and evaluating LLMs, designing systems that can think, create, and collaborate. I may not have papers to prove it, but I have years of real, hands-on experience, contributing to personal projects, local initiatives, and building things that actually work. I care deeply about understanding the full picture; how models behave, how they can fail, and how to make them reliable in the real world.",
+    "paragraph3": "I'm fascinated by the playground of LLMs, agents, and pipelines, and I'm always chasing ways to push AI further; safer, smarter, and more useful. If it involves Gen AI, experimentation, or imagining what's next, that's where you'll find me.",
     "viewLinkedIn": "View LinkedIn Profile",
     "cards": {
       "aiml": {
@@ -77,7 +77,7 @@
         "title": "Machine Learning Engineer",
         "duration": "May 2025 - Jun 2025 · 2 mos",
         "company": "Arkadia Heilbronn",
-        "description": "Explored data relationships, trained ML models, deployed to MLflow, and automated workflows using Dagster for production-ready MLOps. Built a pipeline that triggers automatically upon arrival of new data—enabling a fully automated system.",
+        "description": "Explored data relationships, trained ML models, deployed to MLflow, and automated workflows using Dagster for production-ready MLOps. Built a pipeline that triggers automatically upon arrival of new data; enabling a fully automated system.",
         "collaboration": "",
         "tags": ["Python", "MLflow", "Dagster", "Jupyter", "Scikit-Learn"]
       }
@@ -85,7 +85,7 @@
   },
   "projects": {
     "label": "Featured Projects",
-    "title": "Portfolio",
+    "title": "Github",
     "description": "Building innovative solutions across AI, MLOps, full-stack development, and cloud infrastructure",
     "readMore": "Read More",
     "showLess": "Show Less",
@@ -121,10 +121,10 @@
       },
       {
         "title": "Go Web Service",
-        "category": "Cloud Infrastructure",
-        "description": "A cloud computing project implementing scalable infrastructure for an AI-driven application. Focuses on automated deployment, resilience testing, and service monitoring.",
+        "category": "Notification Gateway",
+        "description": "A Go web service that receives notifications via HTTP POST, validates them, and forwards 'Warning' type notifications to Google Chat. Features REST API validation, in-memory storage, filtering logic, and health check endpoints.",
         "madeFor": "STACKIT",
-        "tags": ["Go", "Terraform", "Kubernetes", "Prometheus", "Grafana"]
+        "tags": ["Go", "REST API", "Google Chat", "HTTP", "Webhooks"]
       },
       {
         "title": "AI Multi-Agent Workflow System",
@@ -188,6 +188,6 @@
   },
   "footer": {
     "copyright": "© 2025 Reda Doukali. All rights reserved.",
-    "tagline": "AI Engineer | MLOps Specialist | Cloud Architecture"
+    "tagline": "GenAI Engineer | Software Developer | Cloud Architecture"
   }
 }

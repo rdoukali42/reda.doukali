@@ -9,8 +9,8 @@
   },
   "hero": {
     "badge": "Disponible pour du travail freelance",
-    "title": "Ingénieur IA",
-    "subtitle": "& Spécialiste MLOps",
+    "title": "Ingénieur GenAI",
+    "subtitle": "& Développeur Logiciel",
     "description": "Création de systèmes intelligents avec LLMs, RAG et technologies IA de pointe",
     "viewWork": "Voir mon travail",
     "getInTouch": "Me contacter"
@@ -19,9 +19,9 @@
     "label": "À propos de moi",
     "title": "Transformer les idées en",
     "titleHighlight": " systèmes intelligents",
-    "paragraph1": "Je suis un ingénieur IA générative en mission pour transformer les idées en systèmes intelligents et créatifs. Après cinq ans à explorer presque tous les recoins de l'informatique—du code et des données aux workflows et pipelines—j'ai enfin trouvé mon point fort : l'IA générative.",
-    "paragraph2": "Cette année, je me suis pleinement investi dans la construction, l'ajustement et l'évaluation de LLMs, concevant des systèmes capables de penser, créer et collaborer. Je n'ai peut-être pas de publications pour le prouver, mais j'ai des années d'expérience pratique réelle, contribuant à des projets personnels, des initiatives locales et construisant des choses qui fonctionnent vraiment. Je me soucie profondément de comprendre l'ensemble du tableau—comment les modèles se comportent, comment ils peuvent échouer et comment les rendre fiables dans le monde réel.",
-    "paragraph3": "Je suis fasciné par le terrain de jeu des LLMs, agents et pipelines, et je cherche toujours des moyens de pousser l'IA plus loin—plus sûre, plus intelligente et plus utile. Si cela implique l'IA générative, l'expérimentation ou l'imagination de ce qui vient ensuite, c'est là que vous me trouverez.",
+    "paragraph1": "Je suis un ingénieur IA générative en mission pour transformer les idées en systèmes intelligents et créatifs. Après cinq ans à explorer presque tous les recoins de l'informatique; du code et des données aux workflows et pipelines; j'ai enfin trouvé mon point fort : l'IA générative.",
+    "paragraph2": "Cette année, je me suis pleinement investi dans la construction, l'ajustement et l'évaluation de LLMs, concevant des systèmes capables de penser, créer et collaborer. Je n'ai peut-être pas de publications pour le prouver, mais j'ai des années d'expérience pratique réelle, contribuant à des projets personnels, des initiatives locales et construisant des choses qui fonctionnent vraiment. Je me soucie profondément de comprendre l'ensemble du tableau; comment les modèles se comportent, comment ils peuvent échouer et comment les rendre fiables dans le monde réel.",
+    "paragraph3": "Je suis fasciné par le terrain de jeu des LLMs, agents et pipelines, et je cherche toujours des moyens de pousser l'IA plus loin; plus sûre, plus intelligente et plus utile. Si cela implique l'IA générative, l'expérimentation ou l'imagination de ce qui vient ensuite, c'est là que vous me trouverez.",
     "viewLinkedIn": "Voir le profil LinkedIn",
     "cards": {
       "aiml": {
@@ -77,7 +77,7 @@
         "title": "Ingénieur Machine Learning",
         "duration": "Mai 2025 - Jun 2025 · 2 mois",
         "company": "Arkadia Heilbronn",
-        "description": "Exploration des relations de données, entraînement de modèles ML, déploiement vers MLflow et automatisation des workflows utilisant Dagster pour MLOps prêt pour la production. Construction d'un pipeline qui se déclenche automatiquement à l'arrivée de nouvelles données—permettant un système entièrement automatisé.",
+        "description": "Exploration des relations de données, entraînement de modèles ML, déploiement vers MLflow et automatisation des workflows utilisant Dagster pour MLOps prêt pour la production. Construction d'un pipeline qui se déclenche automatiquement à l'arrivée de nouvelles données; permettant un système entièrement automatisé.",
         "collaboration": "",
         "tags": ["Python", "MLflow", "Dagster", "Jupyter", "Scikit-Learn"]
       }
@@ -85,7 +85,7 @@
   },
   "projects": {
     "label": "Projets mis en avant",
-    "title": "Portfolio",
+    "title": "Github",
     "description": "Création de solutions innovantes en IA, MLOps, développement full-stack et infrastructure cloud",
     "readMore": "Lire la suite",
     "showLess": "Afficher moins",
@@ -121,10 +121,10 @@
       },
       {
         "title": "Service Web Go",
-        "category": "Infrastructure Cloud",
-        "description": "Un projet de cloud computing implémentant une infrastructure évolutive pour une application pilotée par l'IA. Met l'accent sur le déploiement automatisé, les tests de résilience et la surveillance des services.",
+        "category": "Passerelle de notifications",
+        "description": "Un service web Go qui reçoit des notifications via HTTP POST, les valide et transfère les notifications de type 'Warning' vers Google Chat. Comprend la validation API REST, le stockage en mémoire, la logique de filtrage et les points de contrôle de santé.",
         "madeFor": "STACKIT",
-        "tags": ["Go", "Terraform", "Kubernetes", "Prometheus", "Grafana"]
+        "tags": ["Go", "REST API", "Google Chat", "HTTP", "Webhooks"]
       },
       {
         "title": "Système de workflow multi-agents IA",
@@ -188,6 +188,6 @@
   },
   "footer": {
     "copyright": "© 2025 Reda Doukali. Tous droits réservés.",
-    "tagline": "Ingénieur IA | Spécialiste MLOps | Architecture Cloud"
+    "tagline": "Ingénieur GenAI | Développeur Logiciel | Architecture Cloud"
   }
 }
