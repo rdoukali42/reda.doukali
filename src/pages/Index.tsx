@@ -148,9 +148,9 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Professional Image - 3D Effect */}
-            <div className="md:col-span-5 md:absolute md:right-6 md:top-0 relative order-1 md:order-2 z-20 animate-slide-in-right pt-20 md:pt-32">
-              <div className="relative">
+            {/* Professional Image - 3D Effect - Hidden on mobile */}
+            <div className="hidden md:block md:col-span-5 md:absolute md:right-6 md:top-0 relative order-1 md:order-2 z-20 animate-slide-in-right md:pt-32">
+              <div className="relative md:max-w-lg lg:max-w-xl">
                 {/* Subtle glow behind image */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-accent/10 to-primary/20 blur-3xl rounded-full transform scale-110"></div>
                 
@@ -158,7 +158,7 @@ const Index = () => {
                 <img 
                   src={goldMe} 
                   alt="Reda Doukali - AI Engineer" 
-                  className="relative w-full max-w-md md:max-w-lg lg:max-w-xl h-auto object-contain drop-shadow-[0_20px_60px_rgba(255,193,7,0.3)] transform hover:scale-105 transition-transform duration-700"
+                  className="relative w-full h-auto object-contain drop-shadow-[0_20px_60px_rgba(255,193,7,0.3)] transform hover:scale-105 transition-transform duration-700"
                   style={{
                     filter: 'drop-shadow(0 25px 50px rgba(0, 0, 0, 0.5))'
                   }}
