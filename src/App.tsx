@@ -15,7 +15,7 @@ const App = () => (
       <LocaleProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter basename="/reda.doukali">
+        <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

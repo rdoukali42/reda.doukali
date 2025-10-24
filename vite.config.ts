@@ -4,8 +4,8 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // Base path for GitHub Pages - must match repository name
-  base: mode === 'production' ? '/reda.doukali/' : '/',
+  // Base path - use root for custom domain, or /reda.doukali/ for GitHub Pages subdomain
+  base: mode === 'production' ? '/' : '/',
   server: {
     host: "::",
     port: 8080,
