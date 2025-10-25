@@ -96,21 +96,21 @@
         "category": "Application Web Full-Stack",
         "description": "Une application web full-stack construite pour gérer les tournois sportifs et les statistiques des joueurs. Elle permet aux utilisateurs de créer, rejoindre et suivre des événements sportifs avec des mises à jour en temps réel et des classements interactifs.",
         "madeFor": "42 Hackathon",
-        "tags": ["Django", "Python", "PostgreSQL", "REST API", "Docker"]
+        "tags": ["Flutter", "Dart", "Android SDK"]
       },
       {
         "title": "Pipeline MLOps",
         "category": "Pipeline MLOps",
         "description": "Un pipeline d'opérations Machine Learning de bout en bout conçu pour le déploiement de modèles de qualité production. Intègre des composants ML modulaires pour automatiser le prétraitement des données, l'entraînement, l'évaluation et les workflows de surveillance.",
         "madeFor": "Arkadia",
-        "tags": ["Python", "MLflow", "Docker", "FastAPI", "Kubernetes"]
+        "tags": ["Python", "Analyse de données", "Data Science", "Ingénierie des données", "Apprentissage automatique", "MLflow", "LakeFS", "Dagster", "Jupyter", "Pandas", "Scikit-Learn"]
       },
       {
         "title": "Jeu Web",
         "category": "Plateforme de jeux multijoueurs",
         "description": "Une plateforme de jeux en ligne multijoueurs combinant jeux en temps réel et fonctionnalités de réseau social. Les services backend gèrent le matchmaking et la synchronisation de l'état du jeu en temps réel.",
         "madeFor": "42 Heilbronn",
-        "tags": ["NestJS", "TypeScript", "WebSockets", "React", "OAuth2"]
+        "tags": ["Vue.js", "TypeScript", "WebSockets", "React", "OAuth2", "Docker"]
       },
       {
         "title": "Benchmark de sécurité",
@@ -143,17 +143,21 @@
       {
         "institution": "42 Heilbronn",
         "degree": "Informatique",
-        "duration": "Mars 2022 - Mars 2024"
+        "duration": "Mars 2022 - Mars 2024",
+        "description": "A suivi un programme intensif et axé sur les projets en génie logiciel, axé sur les algorithmes, la programmation système et la résolution de problèmes collaborative en environnements réels."
       },
       {
         "institution": "Université Mohammed Premier Oujda",
         "degree": "Licence en Technologie - Mathématiques & Informatique",
-        "duration": "Septembre 2014 - Juillet 2015"
+        "duration": "Septembre 2014 - Juillet 2015",
+        "description": "Étudié les mathématiques avancées, la programmation et les fondamentaux de l'informatique avec un accent sur la résolution de problèmes appliquée et la théorie computationnelle.",
+        "tags": ["Non certifié"]
       },
       {
         "institution": "Lycée Omar Ibn Abdelaziz Oujda",
         "degree": "CPGE - Sciences Industrielles & Technologie",
-        "duration": "Septembre 2012 - Juillet 2014"
+        "duration": "Septembre 2012 - Juillet 2014",
+        "description": "A suivi des cours préparatoires rigoureux mettant l'accent sur la physique, les mathématiques et les principes d'ingénierie pour l'entrée dans des écoles techniques compétitives."
       }
     ]
   },
@@ -166,7 +170,7 @@
       "LangGraph", "MLflow", "Dagster", "OpenStack",
       "Kubernetes", "Terraform", "Vue.js", "Docker",
       "Prometheus", "Grafana", "C", "JavaScript",
-      "Jupyter", "Bases de vecteurs", "JWT", "Machine Learning",
+      "Jupyter", "Bases de vecteurs", "JWT", "Apprentissage automatique",
       "Graphe de connaissances"
     ]
   },
@@ -189,6 +193,6 @@
   },
   "footer": {
     "copyright": "© 2025 Reda Doukali. Tous droits réservés.",
-    "tagline": "Ingénieur GenAI | Développeur Logiciel | Architecture Cloud"
+    "tagline": "Ingénieur GenAI | Développeur Logiciel | Full-Stack Developer"
   }
 }

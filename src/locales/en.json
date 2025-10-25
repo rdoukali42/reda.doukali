@@ -96,21 +96,33 @@
         "category": "Full-Stack Web Application",
         "description": "A full-stack web application built for managing sports tournaments and player statistics. It allows users to create, join, and follow sports events with real-time updates and interactive leaderboards.",
         "madeFor": "42 Hackathon",
-        "tags": ["Django", "Python", "PostgreSQL", "REST API", "Docker"]
+        "tags": ["Flutter", "Dart", "Android SDK"]
       },
       {
         "title": "MLOps Pipeline",
         "category": "MLOps Pipeline",
         "description": "An end-to-end Machine Learning operations pipeline designed for production-grade model deployment. Integrates modular ML components to automate data preprocessing, training, evaluation, and monitoring workflows.",
         "madeFor": "Arkadia",
-        "tags": ["Python", "MLflow", "Docker", "FastAPI", "Kubernetes"]
+        "tags": [
+          "Python",
+          "Data Analysis",
+          "Data Science",
+          "Data Engineering",
+          "Machine Learning",
+          "MLflow",
+          "LakeFS",
+          "Dagster",
+          "Jupyter",
+          "Pandas",
+          "Scikit-Learn"
+        ]
       },
       {
         "title": "Web Game",
         "category": "Multiplayer Gaming Platform",
         "description": "A multiplayer online game platform combining real-time gaming with social networking features. Backend services manage matchmaking and game state synchronization in real time.",
         "madeFor": "42 Heilbronn",
-        "tags": ["NestJS", "TypeScript", "WebSockets", "React", "OAuth2"]
+        "tags": ["Vue.js", "TypeScript", "WebSockets", "React", "OAuth2", "Docker"]
       },
       {
         "title": "Security Benchmark",
@@ -142,18 +154,22 @@
     "items": [
       {
         "institution": "42 Heilbronn",
-        "degree": "IT",
-        "duration": "March 2022 - March 2024"
+        "degree": "Coding School - IT",
+        "duration": "March 2022 - March 2024",
+        "description": "Completed an intensive, project-based software engineering program focused on algorithms, system programming, and collaborative problem-solving in real-world environments."
       },
       {
         "institution": "Université Mohammed Premier Oujda",
         "degree": "Bachelor of Technology - Mathematics & Computer Science",
-        "duration": "September 2014 - July 2015"
+        "duration": "September 2014 - July 2015",
+        "description": "Studied advanced mathematics, programming, and computer science fundamentals with a focus on applied problem-solving and computational theory.",
+        "tags": ["Non Certified"]
       },
       {
-        "institution": "Lycee Omar Ibn Abdelaziz Oujda",
+        "institution": "Lycée Omar Ibn Abdelaziz Oujda",
         "degree": "CPGE - Industrial Science & Technology",
-        "duration": "September 2012 - July 2014"
+        "duration": "September 2012 - July 2014",
+        "description": "Completed rigorous preparatory courses emphasizing physics, mathematics, and engineering principles for entrance into competitive technical schools."
       }
     ]
   },
@@ -189,6 +205,6 @@
   },
   "footer": {
     "copyright": "© 2025 Reda Doukali. All rights reserved.",
-    "tagline": "GenAI Engineer | Software Developer | Cloud Architecture"
+    "tagline": "GenAI Engineer | Software Developer | Full-Stack Developer"
   }
 }

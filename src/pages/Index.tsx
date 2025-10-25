@@ -417,23 +417,47 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            {t.education.items.map((edu, index) => (
-              <Card 
-                key={index}
-                className="p-6 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-300 animate-scale-in"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="text-center">
-                  <h3 className="text-lg font-bold mb-2 group-hover:text-primary transition-colors">
-                    {edu.institution}
-                  </h3>
-                  <p className="text-primary text-sm font-medium mb-2">{edu.degree}</p>
-                  <Badge variant="secondary" className="bg-muted/50 border border-border text-foreground font-medium text-xs">
-                    {edu.duration}
-                  </Badge>
-                </div>
-              </Card>
-            ))}
+            {t.education.items.map((edu, index) => {
+              const key = `education-${index}`;
+              const isExpanded = !!expandedItems[key];
+
+              return (
+                <Card
+                  key={index}
+                  className="p-6 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-300 animate-scale-in"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <div className="text-center">
+                    <h3 className="text-lg font-bold mb-2 group-hover:text-primary transition-colors">
+                      {edu.institution}
+                    </h3>
+                    <p className="text-primary text-sm font-medium mb-2">{edu.degree}</p>
+                    <Badge variant="secondary" className="bg-muted/50 border border-border text-foreground font-medium text-xs">
+                      {edu.duration}
+                    </Badge>
+
+                    {/* Description: hidden by default, expandable */}
+                    {edu.description && (
+                      <div className="mt-4 text-sm text-muted-foreground">
+                        <p className="whitespace-pre-line">
+                          {isExpanded ? edu.description : truncateText(edu.description, 160)}
+                        </p>
+                        <div className="mt-3">
+                          <Button
+                            variant="ghost"
+                            size="sm"
+                            onClick={() => toggleExpand('education', index)}
+                            className="text-primary"
+                          >
+                            {isExpanded ? 'Show less' : 'Read more'}
+                          </Button>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>

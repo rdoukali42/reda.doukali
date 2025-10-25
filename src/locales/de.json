@@ -96,21 +96,21 @@
         "category": "Full-Stack-Webanwendung",
         "description": "Eine Full-Stack-Webanwendung zur Verwaltung von Sportturnieren und Spielerstatistiken. Sie ermöglicht es Benutzern, Sportveranstaltungen zu erstellen, beizutreten und zu verfolgen, mit Echtzeit-Updates und interaktiven Bestenlisten.",
         "madeFor": "42 Hackathon",
-        "tags": ["Django", "Python", "PostgreSQL", "REST API", "Docker"]
+        "tags": ["Flutter", "Dart", "Android SDK"]
       },
       {
         "title": "MLOps Pipeline",
         "category": "MLOps-Pipeline",
         "description": "Eine End-to-End-Machine-Learning-Operations-Pipeline für produktionsreife Modellbereitstellung. Integriert modulare ML-Komponenten zur Automatisierung von Datenvorverarbeitung, Training, Evaluierung und Überwachungs-Workflows.",
         "madeFor": "Arkadia",
-        "tags": ["Python", "MLflow", "Docker", "FastAPI", "Kubernetes"]
+        "tags": ["Python", "Datenanalyse", "Data Science", "Datenengineering", "Maschinelles Lernen", "MLflow", "LakeFS", "Dagster", "Jupyter", "Pandas", "Scikit-Learn"]
       },
       {
         "title": "Web Game",
         "category": "Multiplayer-Gaming-Plattform",
         "description": "Eine Multiplayer-Online-Gaming-Plattform, die Echtzeit-Gaming mit Social-Networking-Funktionen kombiniert. Backend-Dienste verwalten Matchmaking und Spielzustandssynchronisation in Echtzeit.",
         "madeFor": "42 Heilbronn",
-        "tags": ["NestJS", "TypeScript", "WebSockets", "React", "OAuth2"]
+        "tags": ["Vue.js", "TypeScript", "WebSockets", "React", "OAuth2", "Docker"]
       },
       {
         "title": "Security Benchmark",
@@ -143,17 +143,21 @@
       {
         "institution": "42 Heilbronn",
         "degree": "IT",
-        "duration": "März 2022 - März 2024"
+        "duration": "März 2022 - März 2024",
+        "description": "Absolvierte ein intensives, projektbasiertes Software-Engineering-Programm mit Schwerpunkt auf Algorithmen, Systemprogrammierung und kollaborativem Problemlösen in realen Umgebungen."
       },
       {
         "institution": "Université Mohammed Premier Oujda",
         "degree": "Bachelor of Technology - Mathematik & Informatik",
-        "duration": "September 2014 - Juli 2015"
+        "duration": "September 2014 - Juli 2015",
+        "description": "Studierte fortgeschrittene Mathematik, Programmierung und Informatikgrundlagen mit Fokus auf angewandte Problemlösung und Berechnungstheorie.",
+        "tags": ["Nicht zertifiziert"]
       },
       {
         "institution": "Lycee Omar Ibn Abdelaziz Oujda",
         "degree": "CPGE - Industriewissenschaft & Technologie",
-        "duration": "September 2012 - Juli 2014"
+        "duration": "September 2012 - Juli 2014",
+        "description": "Absolvierte anspruchsvolle Vorbereitungskurse mit Schwerpunkt auf Physik, Mathematik und Ingenieurgrundlagen zur Aufnahme in wettbewerbsfähige technische Hochschulen."
       }
     ]
   },
@@ -161,12 +165,12 @@
     "label": "Expertise",
     "title": "Technischer Stack",
     "description": "Expertise in KI, MLOps, Cloud-Infrastruktur und Full-Stack-Entwicklung",
-    "items": [
+      "items": [
       "Python", "LLMs", "RAG", "Prompt Engineering",
       "LangGraph", "MLflow", "Dagster", "OpenStack",
       "Kubernetes", "Terraform", "Vue.js", "Docker",
       "Prometheus", "Grafana", "C", "JavaScript",
-      "Jupyter", "Vektorspeicher", "JWT", "Machine Learning",
+      "Jupyter", "Vektorspeicher", "JWT", "Maschinelles Lernen",
       "Wissensgraph"
     ]
   },
@@ -189,6 +193,6 @@
   },
   "footer": {
     "copyright": "© 2025 Reda Doukali. Alle Rechte vorbehalten.",
-    "tagline": "GenAI-Ingenieur | Softwareentwickler | Cloud-Architektur"
+    "tagline": "GenAI-Ingenieur | Softwareentwickler | Full-Stack Developer"
   }
 }
