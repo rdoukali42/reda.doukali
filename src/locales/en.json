@@ -166,7 +166,8 @@
       "LangGraph", "MLflow", "Dagster", "OpenStack",
       "Kubernetes", "Terraform", "Vue.js", "Docker",
       "Prometheus", "Grafana", "C", "JavaScript",
-      "Jupyter", "Vector Stores", "JWT", "Machine Learning"
+      "Jupyter", "Vector Stores", "JWT", "Machine Learning",
+      "Knowledge Graph"
     ]
   },
   "contact": {

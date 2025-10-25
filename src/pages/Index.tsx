@@ -28,6 +28,7 @@ import webGameImg from "@/assets/webGame.png";
 import securityBenchImg from "@/assets/securityBench.png";
 import goWebImg from "@/assets/goWeb.png";
 import aiMultiAgentImg from "@/assets/aiMultiAgents.png";
+import SkillGame from "@/components/SkillGame";
 
 const Index = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -467,84 +468,209 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-20 px-6">
-        <div className="max-w-4xl mx-auto">
+      {/* Card Game Section */}
+      <section id="game" className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 animate-fade-in">
+            <div className="inline-flex items-center gap-2 mb-4 text-primary">
+              <Sparkles className="w-5 h-5" />
+              <span className="text-sm font-medium tracking-wider uppercase">Fun Zone</span>
+            </div>
+            <h2 className="text-4xl font-bold mb-3">Skills Mind Reading Challenge</h2>
+            {/* <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Choose your preferred skill and if I guess it in less than 3 rounds, I deserve a follow on LinkedIn! 😉
+            </p> */}
+          </div>
+
+          <div className="flex justify-center animate-scale-in">
+            <SkillGame />
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-12 md:py-20 px-4 md:px-6 relative overflow-hidden">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-0 left-1/4 w-64 h-64 md:w-96 md:h-96 bg-primary/5 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-0 right-1/4 w-64 h-64 md:w-96 md:h-96 bg-primary/5 rounded-full blur-3xl animate-pulse delay-700" />
+        </div>
+
+        <div className="max-w-6xl mx-auto relative z-10">
+          <div className="text-center mb-8 md:mb-16 animate-fade-in">
             <div className="inline-flex items-center gap-2 mb-4 text-primary">
               <Star className="w-5 h-5" />
               <span className="text-sm font-medium tracking-wider uppercase">{t.contact.label}</span>
             </div>
-            <h2 className="text-4xl font-bold mb-3">{t.contact.title}</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-3">{t.contact.title}</h2>
+            <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
               {t.contact.description}
             </p>
           </div>
 
-          <Card className="p-8 md:p-12 bg-card/50 backdrop-blur-sm border-border/50 animate-scale-in">
-            <form className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-medium mb-2">{t.contact.form.name}</label>
-                  <Input 
-                    placeholder={t.contact.form.namePlaceholder}
-                    className="bg-background/50 border-border/50 focus:border-primary"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium mb-2">{t.contact.form.email}</label>
-                  <Input 
-                    type="email" 
-                    placeholder={t.contact.form.emailPlaceholder}
-                    className="bg-background/50 border-border/50 focus:border-primary"
-                  />
-                </div>
-              </div>
-              
-              <div>
-                <label className="block text-sm font-medium mb-2">{t.contact.form.subject}</label>
-                <Input 
-                  placeholder={t.contact.form.subjectPlaceholder}
-                  className="bg-background/50 border-border/50 focus:border-primary"
-                />
-              </div>
-              
-              <div>
-                <label className="block text-sm font-medium mb-2">{t.contact.form.message}</label>
-                <Textarea 
-                  placeholder={t.contact.form.messagePlaceholder}
-                  rows={6}
-                  className="bg-background/50 border-border/50 focus:border-primary resize-none"
-                />
-              </div>
-              
-              <Button variant="gold" size="lg" className="w-full group">
-                {t.contact.form.send}
-                <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </form>
-          </Card>
+          {/* Hexagonal Connection Hub */}
+          <div className="relative max-w-4xl mx-auto">
+            {/* Center connection point - hidden on mobile */}
+            <div className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0">
+              <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 blur-xl animate-pulse" />
+            </div>
 
-          <div className="mt-12 flex justify-center gap-6 animate-fade-in-delay">
-            <a href={socialLinks.github} target="_blank" rel="noopener noreferrer">
-              <Button variant="glass" size="lg">
-                <Github className="w-5 h-5" />
-                GitHub
-              </Button>
-            </a>
-            <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
-              <Button variant="glass" size="lg">
-                <Linkedin className="w-5 h-5" />
-                LinkedIn
-              </Button>
-            </a>
-          </div>
-          
-          <div className="mt-8 text-center text-muted-foreground animate-fade-in-delay">
-            <p className="flex items-center justify-center gap-2">
-              <span>📍</span>
-              <span>{t.contact.location}</span>
-            </p>
+            {/* Connection lines (decorative) - hidden on mobile */}
+            <svg className="hidden md:block absolute inset-0 w-full h-full pointer-events-none" style={{ zIndex: 0 }}>
+              <line x1="50%" y1="50%" x2="25%" y2="30%" stroke="currentColor" strokeWidth="2" className="text-primary/20 animate-pulse" strokeDasharray="5,5" />
+              <line x1="50%" y1="50%" x2="75%" y2="30%" stroke="currentColor" strokeWidth="2" className="text-primary/20 animate-pulse" strokeDasharray="5,5" />
+              <line x1="50%" y1="50%" x2="25%" y2="70%" stroke="currentColor" strokeWidth="2" className="text-primary/20 animate-pulse" strokeDasharray="5,5" />
+              <line x1="50%" y1="50%" x2="75%" y2="70%" stroke="currentColor" strokeWidth="2" className="text-primary/20 animate-pulse" strokeDasharray="5,5" />
+            </svg>
+
+            <div className="relative grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 py-6 md:py-12">
+              {/* LinkedIn - Top Left */}
+              <a 
+                href={socialLinks.linkedin} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group relative justify-self-center md:justify-self-end"
+              >
+                <div className="relative">
+                  {/* Glow effect */}
+                  <div className="absolute -inset-4 bg-gradient-to-br from-primary/0 to-primary/0 group-hover:from-primary/20 group-hover:to-primary/10 rounded-3xl blur-2xl transition-all duration-700" />
+                  
+                  {/* Main card */}
+                  <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-2xl bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-xl border border-primary/10 group-hover:border-primary/30 transition-all duration-500 overflow-hidden">
+                    {/* Animated gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-primary/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                    
+                    {/* Orbiting ring */}
+                    <div className="absolute inset-3 md:inset-4 rounded-xl border border-primary/20 group-hover:rotate-180 transition-transform duration-[2000ms] ease-out" />
+                    
+                    {/* Content */}
+                    <div className="absolute inset-0 flex flex-col items-center justify-center p-4 md:p-6 text-center">
+                      <div className="mb-3 md:mb-4 p-3 md:p-4 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors duration-500 group-hover:scale-110 transform transition-transform">
+                        <Linkedin className="w-6 h-6 md:w-8 md:h-8 text-primary" />
+                      </div>
+                      <h3 className="text-base md:text-lg font-bold mb-1">LinkedIn</h3>
+                      <p className="text-xs text-muted-foreground">Connect</p>
+                      <div className="mt-2 md:mt-3 flex items-center gap-1 text-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <span className="text-xs">Visit</span>
+                        <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                      </div>
+                    </div>
+
+                    {/* Corner accent */}
+                    <div className="absolute top-0 right-0 w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-primary/20 to-transparent rounded-bl-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  </div>
+                </div>
+              </a>
+
+              {/* GitHub - Top Right */}
+              <a 
+                href={socialLinks.github} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group relative justify-self-center md:justify-self-start"
+              >
+                <div className="relative">
+                  {/* Glow effect */}
+                  <div className="absolute -inset-4 bg-gradient-to-br from-primary/0 to-primary/0 group-hover:from-primary/20 group-hover:to-primary/10 rounded-3xl blur-2xl transition-all duration-700" />
+                  
+                  {/* Main card */}
+                  <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-2xl bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-xl border border-primary/10 group-hover:border-primary/30 transition-all duration-500 overflow-hidden">
+                    {/* Animated gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-primary/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                    
+                    {/* Orbiting ring */}
+                    <div className="absolute inset-3 md:inset-4 rounded-xl border border-primary/20 group-hover:rotate-180 transition-transform duration-[2000ms] ease-out" />
+                    
+                    {/* Content */}
+                    <div className="absolute inset-0 flex flex-col items-center justify-center p-4 md:p-6 text-center">
+                      <div className="mb-3 md:mb-4 p-3 md:p-4 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors duration-500 group-hover:scale-110 transform transition-transform">
+                        <Github className="w-6 h-6 md:w-8 md:h-8 text-primary" />
+                      </div>
+                      <h3 className="text-base md:text-lg font-bold mb-1">GitHub</h3>
+                      <p className="text-xs text-muted-foreground">Explore Code</p>
+                      <div className="mt-2 md:mt-3 flex items-center gap-1 text-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <span className="text-xs">Visit</span>
+                        <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                      </div>
+                    </div>
+
+                    {/* Corner accent */}
+                    <div className="absolute top-0 left-0 w-12 h-12 md:w-16 md:h-16 bg-gradient-to-bl from-primary/20 to-transparent rounded-br-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  </div>
+                </div>
+              </a>
+
+              {/* Email - Bottom Left */}
+              <a 
+                href={`mailto:${socialLinks.email}`}
+                className="group relative justify-self-center md:justify-self-end"
+              >
+                <div className="relative">
+                  {/* Glow effect */}
+                  <div className="absolute -inset-4 bg-gradient-to-br from-primary/0 to-primary/0 group-hover:from-primary/20 group-hover:to-primary/10 rounded-3xl blur-2xl transition-all duration-700" />
+                  
+                  {/* Main card */}
+                  <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-2xl bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-xl border border-primary/10 group-hover:border-primary/30 transition-all duration-500 overflow-hidden">
+                    {/* Animated gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-primary/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                    
+                    {/* Orbiting ring */}
+                    <div className="absolute inset-3 md:inset-4 rounded-xl border border-primary/20 group-hover:rotate-180 transition-transform duration-[2000ms] ease-out" />
+                    
+                    {/* Content */}
+                    <div className="absolute inset-0 flex flex-col items-center justify-center p-4 md:p-6 text-center">
+                      <div className="mb-3 md:mb-4 p-3 md:p-4 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors duration-500 group-hover:scale-110 transform transition-transform">
+                        <Mail className="w-6 h-6 md:w-8 md:h-8 text-primary" />
+                      </div>
+                      <h3 className="text-base md:text-lg font-bold mb-1">Email</h3>
+                      <p className="text-xs text-muted-foreground">Get in Touch</p>
+                      <div className="mt-2 md:mt-3 flex items-center gap-1 text-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <span className="text-xs">Send</span>
+                        <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                      </div>
+                    </div>
+
+                    {/* Corner accent */}
+                    <div className="absolute bottom-0 right-0 w-12 h-12 md:w-16 md:h-16 bg-gradient-to-tl from-primary/20 to-transparent rounded-tl-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  </div>
+                </div>
+              </a>
+
+              {/* Location - Bottom Right */}
+              <div className="group relative justify-self-center md:justify-self-start">
+                <div className="relative">
+                  {/* Glow effect */}
+                  <div className="absolute -inset-4 bg-gradient-to-br from-primary/0 to-primary/0 group-hover:from-primary/20 group-hover:to-primary/10 rounded-3xl blur-2xl transition-all duration-700" />
+                  
+                  {/* Main card */}
+                  <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-2xl bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-xl border border-primary/10 group-hover:border-primary/30 transition-all duration-500 overflow-hidden">
+                    {/* Animated gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-primary/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                    
+                    {/* Orbiting ring */}
+                    <div className="absolute inset-3 md:inset-4 rounded-xl border border-primary/20 group-hover:rotate-180 transition-transform duration-[2000ms] ease-out" />
+                    
+                    {/* Content */}
+                    <div className="absolute inset-0 flex flex-col items-center justify-center p-4 md:p-6 text-center">
+                      <div className="mb-3 md:mb-4 p-3 md:p-4 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors duration-500 group-hover:scale-110 transform transition-transform">
+                        <span className="text-2xl md:text-3xl">📍</span>
+                      </div>
+                      <h3 className="text-base md:text-lg font-bold mb-1">Location</h3>
+                      <p className="text-xs text-muted-foreground px-2">Heilbronn, Germany</p>
+                    </div>
+
+                    {/* Corner accent */}
+                    <div className="absolute bottom-0 left-0 w-12 h-12 md:w-16 md:h-16 bg-gradient-to-tr from-primary/20 to-transparent rounded-tr-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Center decorative element - hidden on mobile */}
+            <div className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+              <div className="w-20 h-20 rounded-full border-2 border-primary/30 animate-ping" style={{ animationDuration: '3s' }} />
+              <div className="absolute inset-0 w-20 h-20 rounded-full border border-primary/20" />
+            </div>
           </div>
         </div>
       </section>
