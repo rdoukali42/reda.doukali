@@ -8,10 +8,10 @@
     "contact": "Contact"
   },
   "hero": {
-    "badge": "Disponible pour du travail freelance",
-    "title": "Ingénieur GenAI",
-    "subtitle": "& Développeur Logiciel",
-    "description": "Création de systèmes intelligents avec LLMs, RAG et technologies IA de pointe",
+    "badge": "Ouvert aux postes Applied AI / AI Security — UE ou télétravail",
+    "title": "Applied AI Engineer",
+    "subtitle": "Sécurité LLM · Systèmes Multi-Agents",
+    "description": "Je conçois des systèmes LLM qui tiennent face à la pression du monde réel — de l'évaluation sécurité et la détection de jailbreak aux workflows multi-agents qui passent en production.",
     "viewWork": "Voir mon travail",
     "getInTouch": "Me contacter"
   },
@@ -19,9 +19,9 @@
     "label": "À propos de moi",
     "title": "Transformer les idées en",
     "titleHighlight": " systèmes intelligents",
-    "paragraph1": "Je suis un ingénieur IA générative en mission pour transformer les idées en systèmes intelligents et créatifs. Après cinq ans à explorer presque tous les recoins de l'informatique; du code et des données aux workflows et pipelines; j'ai enfin trouvé mon point fort : l'IA générative.",
-    "paragraph2": "Cette année, je me suis pleinement investi dans la construction, l'ajustement et l'évaluation de LLMs, concevant des systèmes capables de penser, créer et collaborer. Je n'ai peut-être pas de publications pour le prouver, mais j'ai des années d'expérience pratique réelle, contribuant à des projets personnels, des initiatives locales et construisant des choses qui fonctionnent vraiment. Je me soucie profondément de comprendre l'ensemble du tableau; comment les modèles se comportent, comment ils peuvent échouer et comment les rendre fiables dans le monde réel.",
-    "paragraph3": "Je suis fasciné par le terrain de jeu des LLMs, agents et pipelines, et je cherche toujours des moyens de pousser l'IA plus loin; plus sûre, plus intelligente et plus utile. Si cela implique l'IA générative, l'expérimentation ou l'imagination de ce qui vient ensuite, c'est là que vous me trouverez.",
+    "paragraph1": "La plupart des applications LLM s'effondrent dès qu'elles rencontrent une entrée adversariale. Je construis celles qui tiennent. En tant qu'Applied AI Engineer, je travaille à l'intersection des LLMs, des systèmes multi-agents et de la sécurité IA — en concevant des systèmes qui survivent au contact de la réalité, et pas seulement à des démos.",
+    "paragraph2": "Au cours des 18 derniers mois, j'ai livré quelques projets dont je suis vraiment fier : SecEval, un framework d'évaluation de sécurité LLM agnostique au modèle, construit avec Aleph Alpha ; LyraixGuard, un modèle de détection de jailbreak fine-tuné sur Qwen3-4B avec LoRA pour le blocage de menaces en temps réel en entreprise ; des systèmes de support multi-agents sur LangGraph avec RAG et tracing LangFuse de bout en bout ; et une plateforme DBaaS basée sur Kubernetes sur OpenStack avec authentification JWT/OIDC complète.",
+    "paragraph3": "Avant les LLMs, j'ai livré du front-end chez Cegedim et passé deux ans à entraîner des modèles de coding IA chez Outlier — où j'ai compris que le prompt engineering, c'est surtout de l'ingénierie avec des messages d'erreur en moins. Ce que j'apporte : exécution de niveau production, évaluation pensée avant le déploiement, et sécurité traitée comme une préoccupation de premier rang, pas une réflexion après coup.",
     "viewLinkedIn": "Voir le profil LinkedIn",
     "cards": {
       "aiml": {
@@ -37,8 +37,8 @@
         "description": "OpenStack & K8s"
       },
       "certifications": {
-        "title": "10+",
-        "description": "Certifications"
+        "title": "Sécurité IA",
+        "description": "Renforcement LLM"
       }
     }
   },
@@ -80,6 +80,22 @@
         "description": "Exploration des relations de données, entraînement de modèles ML, déploiement vers MLflow et automatisation des workflows utilisant Dagster pour MLOps prêt pour la production. Construction d'un pipeline qui se déclenche automatiquement à l'arrivée de nouvelles données; permettant un système entièrement automatisé.",
         "collaboration": "",
         "tags": ["Python", "MLflow", "Dagster", "Jupyter", "Scikit-Learn"]
+      },
+      {
+        "title": "Formateur IA Coding",
+        "duration": "2023 - 2025 · Freelance Remote",
+        "company": "Outlier AI",
+        "description": "Évaluation et amélioration de code frontend généré par IA (HTML, CSS, JavaScript) en fournissant un retour sur la fonctionnalité, les bonnes pratiques et la qualité du code. Entraînement de modèles de coding IA via prompt engineering et validation de réponses, testant les sorties sur des scénarios de développement réels incluant l'intégration MCP et les workflows agentiques.",
+        "collaboration": "",
+        "tags": ["Prompt Engineering", "RLHF", "MCP", "Agent Workflows", "Code Review"]
+      },
+      {
+        "title": "Développeur Frontend",
+        "duration": "Avr 2021 - Jan 2022 · Remote",
+        "company": "Cegedim Maroc",
+        "description": "Construction d'interfaces utilisateur réactives en HTML, CSS et JavaScript pour différentes plateformes web. Collaboration avec designers et ingénieurs backend pour mettre en œuvre des améliorations UI/UX et fluidifier les fonctionnalités produit. Livraison de code propre et réutilisable, aligné avec les exigences projet.",
+        "collaboration": "",
+        "tags": ["HTML", "CSS", "JavaScript", "Responsive UI", "UI/UX"]
       }
     ]
   },
@@ -143,7 +159,7 @@
       {
         "institution": "42 Heilbronn",
         "degree": "Informatique",
-        "duration": "Mars 2022 - Mars 2024",
+        "duration": "Mars 2022 - Mars 2026",
         "description": "A suivi un programme intensif et axé sur les projets en génie logiciel, axé sur les algorithmes, la programmation système et la résolution de problèmes collaborative en environnements réels."
       },
       {
@@ -166,12 +182,15 @@
     "title": "Stack technique",
     "description": "Expertise en IA, MLOps, infrastructure cloud et développement full-stack",
     "items": [
-      "Python", "LLMs", "RAG", "Prompt Engineering",
-      "LangGraph", "MLflow", "Dagster", "OpenStack",
-      "Kubernetes", "Terraform", "Vue.js", "Docker",
-      "Prometheus", "Grafana", "C", "JavaScript",
-      "Jupyter", "Bases de vecteurs", "JWT", "Apprentissage automatique",
-      "Graphe de connaissances"
+      "Python", "JavaScript", "TypeScript", "Go", "C",
+      "LLMs", "RAG", "Prompt Engineering", "Sécurité IA", "Fine-Tuning",
+      "LoRA", "Hugging Face", "Unsloth", "LangGraph", "LangChain",
+      "ChromaDB", "LangFuse", "OpenRouter", "Ollama",
+      "MLflow", "Dagster", "XGBoost", "Pandas", "Jupyter",
+      "Apprentissage automatique", "Bases de vecteurs",
+      "OpenStack", "Kubernetes", "Terraform", "Docker",
+      "Vue.js", "FastAPI", "JWT",
+      "Prometheus", "Grafana"
     ]
   },
   "contact": {
@@ -193,6 +212,6 @@
   },
   "footer": {
     "copyright": "© 2025 Reda Doukali. Tous droits réservés.",
-    "tagline": "Ingénieur GenAI | Développeur Logiciel | Full-Stack Developer"
+    "tagline": "Applied AI Engineer · Sécurité LLM · Systèmes Multi-Agents · RAG"
   }
 }
