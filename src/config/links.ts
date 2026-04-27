@@ -12,13 +12,13 @@ export const socialLinks = {
 } as const;
 
 export const projectLinks = {
-  // Add project repository or demo URLs here
-  sports42: "https://github.com/rdoukali42/42sports", // Update with actual URL
-  mlops: "https://github.com/rdoukali42/Mlops_Level3_chanlenge", // Update with actual URL
-  webGame: "https://github.com/rdoukali42/ft_transcendence", // Update with actual URL
-  securityBenchmark: "https://github.com/rdoukali42/level3.sevEval", // Update with actual URL
-  goWebService: "https://github.com/rdoukali42/STACKIT_Challenge", // Update with actual URL
-  aiMultiAgent: "https://github.com/rdoukali42/Network_LLMs", // Update with actual URL
+  sports42: "https://github.com/rdoukali42/42sports",
+  mlops: "https://github.com/rdoukali42/Mlops_Level3_chanlenge",
+  lyraixGuard: "https://huggingface.co/Lyraix-AI/LyraixGuard-v0",
+  lyraixGuardPaper: "https://zenodo.org/records/19827438",
+  securityBenchmark: "https://github.com/rdoukali42/level3.sevEval",
+  goWebService: "https://github.com/rdoukali42/STACKIT_Challenge",
+  aiMultiAgent: "https://github.com/rdoukali42/Network_LLMs",
 } as const;
 
 export const companyLinks = {

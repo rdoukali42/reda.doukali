@@ -7,24 +7,25 @@ import { Textarea } from "@/components/ui/textarea";
 import { useLocale } from "@/hooks/use-locale";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { socialLinks, projectLinks, companyLinks } from "@/config/links";
-import { 
-  Github, 
-  Linkedin, 
-  Mail, 
-  ExternalLink, 
-  Code2, 
-  Palette, 
+import {
+  Github,
+  Linkedin,
+  Mail,
+  ExternalLink,
+  Code2,
+  Palette,
   Smartphone,
   ArrowRight,
   Send,
   Star,
-  Sparkles
+  Sparkles,
+  FileText
 } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import goldMe from "@/assets/gold_me.png";
 import sports42Img from "@/assets/42sports.png";
 import mlopsImg from "@/assets/mlopsPipe.png";
-import webGameImg from "@/assets/webGame.png";
+import lyraixGuardImg from "@/assets/lyraixGuard.png";
 import securityBenchImg from "@/assets/securityBench.png";
 import goWebImg from "@/assets/goWeb.png";
 import aiMultiAgentImg from "@/assets/aiMultiAgents.png";
@@ -52,17 +53,27 @@ const Index = () => {
   };
 
   // Image mappings for projects (matches order in locale files)
-  // Order: 42sports, MLOps Pipeline, Web Game, Security Benchmark, Go Web Service, AI Multi-Agent
-  const projectImages = [sports42Img, mlopsImg, webGameImg, securityBenchImg, goWebImg, aiMultiAgentImg];
-  
+  // Order: 42sports, Spotify Popularity, LyraixGuard, SecEval, Go Notification, AI Support Ticket
+  const projectImages = [sports42Img, mlopsImg, lyraixGuardImg, securityBenchImg, goWebImg, aiMultiAgentImg];
+
   // Project repository links (matches order in locale files)
   const projectRepoLinks = [
     projectLinks.sports42,
     projectLinks.mlops,
-    projectLinks.webGame,
+    projectLinks.lyraixGuard,
     projectLinks.securityBenchmark,
     projectLinks.goWebService,
     projectLinks.aiMultiAgent
+  ];
+
+  // Optional paper/research links — only LyraixGuard has one for now
+  const projectPaperLinks: (string | undefined)[] = [
+    undefined,                       // 42sports
+    undefined,                       // Spotify Popularity Prediction
+    projectLinks.lyraixGuardPaper,   // LyraixGuard
+    undefined,                       // SecEval
+    undefined,                       // Go Notification Gateway
+    undefined,                       // AI Support Ticket System
   ];
 
   return (
@@ -158,7 +169,7 @@ const Index = () => {
                 {/* The PNG image without background - positioned to overlap text */}
                 <img 
                   src={goldMe} 
-                  alt="Reda Doukali - AI Engineer" 
+                  alt="Reda Doukali - Applied AI Engineer"
                   className="relative w-full h-auto object-contain drop-shadow-[0_20px_60px_rgba(255,193,7,0.3)] transform hover:scale-105 transition-transform duration-700"
                   style={{
                     filter: 'drop-shadow(0 25px 50px rgba(0, 0, 0, 0.5))'
@@ -387,13 +398,24 @@ const Index = () => {
                       )}
                     </div>
                     
-                    <a href={projectRepoLinks[index]} target="_blank" rel="noopener noreferrer" className="block">
-                      <Button variant="outline" size="sm" className="w-full group/btn border-primary/30 hover:bg-primary/10 hover:border-primary">
-                        <Github className="w-4 h-4" />
-                        View Repository
-                        <ExternalLink className="w-3 h-3 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
-                      </Button>
-                    </a>
+                    <div className="flex flex-col gap-2">
+                      <a href={projectRepoLinks[index]} target="_blank" rel="noopener noreferrer" className="block">
+                        <Button variant="outline" size="sm" className="w-full group/btn border-primary/30 hover:bg-primary/10 hover:border-primary">
+                          <Github className="w-4 h-4" />
+                          View Repository
+                          <ExternalLink className="w-3 h-3 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
+                        </Button>
+                      </a>
+                      {projectPaperLinks[index] && (
+                        <a href={projectPaperLinks[index]} target="_blank" rel="noopener noreferrer" className="block">
+                          <Button variant="outline" size="sm" className="w-full group/btn border-primary/30 hover:bg-primary/10 hover:border-primary">
+                            <FileText className="w-4 h-4" />
+                            Read Paper
+                            <ExternalLink className="w-3 h-3 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
+                          </Button>
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </Card>
               );
