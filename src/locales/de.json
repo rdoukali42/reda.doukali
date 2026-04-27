@@ -115,39 +115,39 @@
         "tags": ["Flutter", "Dart", "Android SDK"]
       },
       {
-        "title": "MLOps Pipeline",
-        "category": "MLOps-Pipeline",
-        "description": "Eine End-to-End-Machine-Learning-Operations-Pipeline für produktionsreife Modellbereitstellung. Integriert modulare ML-Komponenten zur Automatisierung von Datenvorverarbeitung, Training, Evaluierung und Überwachungs-Workflows.",
+        "title": "Spotify Popularity Prediction",
+        "category": "Full-Stack ML App",
+        "description": "Sagt voraus, ob ein Spotify-Track wahrscheinlich beliebt wird, und liefert das Ganze als nutzbares Web-Produkt aus. End-to-End-Preprocessing-Pipeline mit konsistenter Kategorienbehandlung zwischen Training und Inferenz, Behandlung von Klassenungleichgewicht über gewichtetes Training, interaktive Prediction-UI mit Auto-Fill-Sanity-Checks und Deployment als containerisierter Modellservice auf Cloud Run mit Frontend auf Firebase Hosting.",
         "madeFor": "Arkadia",
-        "tags": ["Python", "Datenanalyse", "Data Science", "Datenengineering", "Maschinelles Lernen", "MLflow", "LakeFS", "Dagster", "Jupyter", "Pandas", "Scikit-Learn"]
+        "tags": ["Python", "MLflow", "Dagster", "LakeFS", "XGBoost", "Firebase", "Cloud Run"]
       },
       {
-        "title": "Web Game",
-        "category": "Multiplayer-Gaming-Plattform",
-        "description": "Eine Multiplayer-Online-Gaming-Plattform, die Echtzeit-Gaming mit Social-Networking-Funktionen kombiniert. Backend-Dienste verwalten Matchmaking und Spielzustandssynchronisation in Echtzeit.",
-        "madeFor": "42 Heilbronn",
-        "tags": ["Vue.js", "TypeScript", "WebSockets", "React", "OAuth2", "Docker"]
+        "title": "LyraixGuard",
+        "category": "LLM-Sicherheit · Fine-Tuning",
+        "description": "Ein Enterprise-KI-Sicherheitsklassifikator, der als Gatekeeper zwischen Nutzern und LLM-Systemen fungiert und Nachrichten als Safe / Unsafe / Controversial über 13 Angriffskategorien klassifiziert (Prompt Injection, Agent Hijacking, RAG-Datenexfiltration, Credential Theft und mehr). LoRA-Fine-Tune von Qwen3-4B (66M trainierbare Parameter, 1,62 %) auf einem zweisprachigen EN/DE-Datensatz mit 120k Samples. Führt \"Intended-Output Reasoning\" ein — eine Trainingsmethodik, bei der das Modell rekonstruiert, was die Ziel-KI ausgeben würde, und dann die Sicherheit aus dieser rekonstruierten Ausgabe klassifiziert. Erreicht 99,8 % Accuracy im No-Think-Modus, 97,0 % Recall auf Lakera Gandalf und 0,940 F1 auf SafeGuard-PI — und übertrifft LlamaGuard, ShieldGemma und AprielGuard.",
+        "madeFor": "Lyraix (Independent Research)",
+        "tags": ["Qwen3", "LoRA", "Unsloth", "Hugging Face", "Fine-Tuning", "LLM Security", "CoT"]
       },
       {
-        "title": "Security Benchmark",
-        "category": "KI-Sicherheits-Framework",
-        "description": "Ein KI-Sicherheits-Evaluierungs-Framework zur Bewertung der Robustheit und Compliance großer Sprachmodelle. Bietet strukturierte Tests zur Evaluierung von Modellantworten gegen regelbasierte Kriterien.",
+        "title": "SecEval",
+        "category": "LLM-Sicherheitsevaluierung",
+        "description": "Ein modellunabhängiges LLM-Security-Evaluation-Framework für Jailbreak-, Prompt-Injection- und Unsafe-Output-Benchmarking. Führt Modelle remote über OpenRouter oder lokal über Ollama aus, integriert sicherheitsfokussierte Klassifikatoren, erzwingt strukturierte Ergebnisformate für konsistente Ausgaben und produziert engineering-freundliche grafische CLI-Reports mit voller Reproduzierbarkeit (Timeouts, Retries, vorhersehbare Evaluation-Artefakte).",
         "madeFor": "Aleph Alpha",
-        "tags": ["Python", "Transformers", "Hugging Face", "Streamlit"]
+        "tags": ["Python", "OpenRouter", "Ollama", "Hugging Face", "LLM Evaluation", "Security"]
       },
       {
-        "title": "Go Web Service",
+        "title": "Go Notification Gateway",
         "category": "Benachrichtigungs-Gateway",
         "description": "Ein Go-Webservice, der Benachrichtigungen per HTTP POST empfängt, validiert und 'Warning'-Benachrichtigungen an Google Chat weiterleitet. Bietet REST-API-Validierung, In-Memory-Speicherung, Filterlogik und Health-Check-Endpunkte.",
         "madeFor": "STACKIT",
         "tags": ["Go", "REST API", "Google Chat", "HTTP", "Webhooks"]
       },
       {
-        "title": "KI-Multi-Agenten-Workflow-System",
-        "category": "KI-Automatisierung",
-        "description": "Ein umfassendes KI-Automatisierungssystem mit mehreren koordinierten Agenten zur Bearbeitung von Kundentickets und Workflow-Routing. Nutzt Agenten-Orchestrierungs-Frameworks für autonome Zusammenarbeit.",
+        "title": "AI Support Ticket System",
+        "category": "Multi-Agent · RAG",
+        "description": "Löst Support-Anfragen automatisch, wenn Dokumentation existiert (via RAG), und eskaliert an den richtigen menschlichen Experten, wenn nicht. LangGraph-orchestrierte Agenten übernehmen Routing, Retrieval, Eskalation und Voice-Call-Workflows; strikte Handoff-Verträge verhindern State Drift, durchgängiges Tracing erfolgt über LangFuse. Streamlit-UI bietet Auth, Ticket-Lifecycle-Tracking und Betriebs-Sichtbarkeit.",
         "madeFor": "Arkadia",
-        "tags": ["LangChain", "LangGraph", "Gemini", "FastAPI", "WebSocket"]
+        "tags": ["LangChain", "LangGraph", "Gemini", "RAG", "ChromaDB", "LangFuse", "Streamlit"]
       }
     ]
   },
