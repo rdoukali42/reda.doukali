@@ -8,10 +8,10 @@
     "contact": "Contact"
   },
   "hero": {
-    "badge": "Available for freelance work",
-    "title": "GenAI Engineer",
-    "subtitle": "& Software Developer",
-    "description": "Building intelligent systems with LLMs, RAG, and cutting-edge AI technologies",
+    "badge": "Open to Applied AI / AI Security roles — EU or remote",
+    "title": "Applied AI Engineer",
+    "subtitle": "LLM Security · Multi-Agent Systems",
+    "description": "I design LLM systems that hold up under real-world pressure — from security evaluation and jailbreak detection to multi-agent workflows that actually ship.",
     "viewWork": "View My Work",
     "getInTouch": "Get in Touch"
   },
@@ -19,9 +19,9 @@
     "label": "About Me",
     "title": "Turning ideas into",
     "titleHighlight": " intelligent systems",
-    "paragraph1": "I'm a Gen AI engineer on a mission to turn ideas into intelligent, creative systems. After five years exploring almost every corner of IT; from code and data to workflows and pipelines; I finally found my sweet spot: generative AI.",
-    "paragraph2": "This year, I've been all in, building, fine-tuning, and evaluating LLMs, designing systems that can think, create, and collaborate. I may not have papers to prove it, but I have years of real, hands-on experience, contributing to personal projects, local initiatives, and building things that actually work. I care deeply about understanding the full picture; how models behave, how they can fail, and how to make them reliable in the real world.",
-    "paragraph3": "I'm fascinated by the playground of LLMs, agents, and pipelines, and I'm always chasing ways to push AI further; safer, smarter, and more useful. If it involves Gen AI, experimentation, or imagining what's next, that's where you'll find me.",
+    "paragraph1": "Most LLM applications fall apart the moment they meet adversarial input. I build the ones that don't. As an Applied AI Engineer, I work where LLMs, multi-agent systems, and AI security overlap — designing systems that survive contact with reality, not just demos.",
+    "paragraph2": "Over the past 18 months I've shipped a few things I'm genuinely proud of: SecEval, a model-agnostic LLM security evaluation framework built with Aleph Alpha; LyraixGuard, a jailbreak-detection model fine-tuned on Qwen3-4B with LoRA for real-time enterprise threat blocking; multi-agent support systems on LangGraph with RAG and end-to-end LangFuse tracing; and a Kubernetes-based DBaaS platform on OpenStack with full JWT/OIDC auth.",
+    "paragraph3": "Before LLMs, I shipped front-end at Cegedim and spent two years training AI coding models at Outlier — which is where I figured out that prompt engineering is mostly just engineering with worse error messages. What I bring: production-grade execution, evaluation designed before deployment, and security treated as a first-class concern, not an afterthought.",
     "viewLinkedIn": "View LinkedIn Profile",
     "cards": {
       "aiml": {
@@ -37,8 +37,8 @@
         "description": "OpenStack & K8s"
       },
       "certifications": {
-        "title": "10+",
-        "description": "Certifications"
+        "title": "AI Security",
+        "description": "LLM Hardening"
       }
     }
   },
@@ -80,6 +80,22 @@
         "description": "Explored data relationships, trained ML models, deployed to MLflow, and automated workflows using Dagster for production-ready MLOps. Built a pipeline that triggers automatically upon arrival of new data; enabling a fully automated system.",
         "collaboration": "",
         "tags": ["Python", "MLflow", "Dagster", "Jupyter", "Scikit-Learn"]
+      },
+      {
+        "title": "AI Coding Trainer",
+        "duration": "2023 - 2025 · Remote Freelance",
+        "company": "Outlier AI",
+        "description": "Evaluated and refined AI-generated frontend code (HTML, CSS, JavaScript) by providing feedback on functionality, best practices, and code quality. Trained AI coding models through prompt engineering and response validation, testing outputs against real-world development scenarios including MCP integration and agent-based workflows.",
+        "collaboration": "",
+        "tags": ["Prompt Engineering", "RLHF", "MCP", "Agent Workflows", "Code Review"]
+      },
+      {
+        "title": "Frontend Developer",
+        "duration": "Apr 2021 - Jan 2022 · Remote",
+        "company": "Cegedim Maroc",
+        "description": "Built responsive user interfaces using HTML, CSS, and JavaScript across web platforms. Collaborated with designers and backend engineers to implement UI/UX improvements and streamline product functionality. Delivered clean, reusable code aligned with project requirements.",
+        "collaboration": "",
+        "tags": ["HTML", "CSS", "JavaScript", "Responsive UI", "UI/UX"]
       }
     ]
   },
@@ -155,7 +171,7 @@
       {
         "institution": "42 Heilbronn",
         "degree": "Coding School - IT",
-        "duration": "March 2022 - March 2024",
+        "duration": "March 2022 - March 2026",
         "description": "Completed an intensive, project-based software engineering program focused on algorithms, system programming, and collaborative problem-solving in real-world environments."
       },
       {
@@ -178,12 +194,15 @@
     "title": "Technical Stack",
     "description": "Expertise in AI, MLOps, cloud infrastructure, and full-stack development",
     "items": [
-      "Python", "LLMs", "RAG", "Prompt Engineering",
-      "LangGraph", "MLflow", "Dagster", "OpenStack",
-      "Kubernetes", "Terraform", "Vue.js", "Docker",
-      "Prometheus", "Grafana", "C", "JavaScript",
-      "Jupyter", "Vector Stores", "JWT", "Machine Learning",
-      "Knowledge Graph"
+      "Python", "JavaScript", "TypeScript", "Go", "C",
+      "LLMs", "RAG", "Prompt Engineering", "AI Security", "Fine-Tuning",
+      "LoRA", "Hugging Face", "Unsloth", "LangGraph", "LangChain",
+      "ChromaDB", "LangFuse", "OpenRouter", "Ollama",
+      "MLflow", "Dagster", "XGBoost", "Pandas", "Jupyter",
+      "Machine Learning", "Vector Stores",
+      "OpenStack", "Kubernetes", "Terraform", "Docker",
+      "Vue.js", "FastAPI", "JWT",
+      "Prometheus", "Grafana"
     ]
   },
   "contact": {
@@ -205,6 +224,6 @@
   },
   "footer": {
     "copyright": "© 2025 Reda Doukali. All rights reserved.",
-    "tagline": "GenAI Engineer | Software Developer | Full-Stack Developer"
+    "tagline": "Applied AI Engineer · LLM Security · Multi-Agent Systems · RAG"
   }
 }
