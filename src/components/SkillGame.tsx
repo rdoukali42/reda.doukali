@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from './ui/button';
 import { Sparkles, RotateCw, Linkedin } from 'lucide-react';
+import { socialLinks } from '@/config/links';
 
 interface Skill {
   id: number;
@@ -227,7 +228,7 @@ const SkillGame = () => {
               <Button 
                 variant="gold" 
                 size="lg" 
-                onClick={() => window.open('https://www.linkedin.com/in/reda-doukali/', '_blank')}
+                onClick={() => window.open(socialLinks.linkedin, '_blank', 'noopener,noreferrer')}
                 className="text-base md:text-lg px-6 md:px-8"
               >
                 <Linkedin className="w-5 h-5 mr-2" />
