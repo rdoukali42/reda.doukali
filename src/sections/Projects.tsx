@@ -7,7 +7,6 @@ import { useLocale } from '@/hooks/use-locale';
 import { projectLinks } from '@/config/links';
 import { FocusBracket } from '@/components/motion/FocusBracket';
 import { ChipMount } from '@/components/motion/ChipMount';
-import { AnnotationLine } from '@/components/motion/AnnotationLine';
 import sports42Img from '@/assets/42sports.png';
 import mlopsImg from '@/assets/mlopsPipe.png';
 import lyraixGuardImg from '@/assets/lyraixGuard.png';
@@ -74,13 +73,21 @@ const Projects = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-transparent" />
 
-                    {/* Blueprint annotations on hover */}
-                    <div className="absolute inset-0 p-3 flex flex-col justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <AnnotationLine label={project.category} duration={0.4} />
-                      <AnnotationLine label={`${t.projects.madeFor} ${project.madeFor}`} duration={0.4} delay={0.1} />
-                      {project.tags[0] && (
-                        <AnnotationLine label={project.tags[0]} duration={0.4} delay={0.2} />
-                      )}
+                    {/* Hover spec overlay: full tech stack with workshop chips */}
+                    <div className="absolute inset-0 bg-background/75 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300 p-4 pb-12 flex flex-col gap-2 pointer-events-none">
+                      <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-primary/80">
+                        [ STACK ]
+                      </div>
+                      <div className="flex flex-wrap gap-1.5 content-start">
+                        {project.tags.map((tag) => (
+                          <span
+                            key={tag}
+                            className="font-mono text-[10px] uppercase tracking-wider px-1.5 py-0.5 bg-background/85 border border-primary/40 rounded-sm text-primary/90"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
                     </div>
 
                     <div className="absolute bottom-3 left-3">
