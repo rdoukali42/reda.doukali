@@ -44,7 +44,7 @@ const Projects = () => {
   const toggle = (i: number) => setExpanded((p) => ({ ...p, [i]: !p[i] }));
 
   return (
-    <section id="projects" className="py-20 px-6 relative bg-gradient-to-b from-background to-card/20" aria-labelledby="projects-heading">
+    <section id="projects" className="py-16 sm:py-20 px-4 sm:px-6 relative bg-gradient-to-b from-background to-card/20" aria-labelledby="projects-heading">
       <div className="max-w-7xl mx-auto">
         <header className="text-center mb-12">
           <div className="inline-flex items-center gap-2 mb-4 text-primary font-mono text-xs uppercase tracking-[0.2em]">
