@@ -186,10 +186,10 @@
       "LLMs", "RAG", "Prompt Engineering", "Sécurité IA", "Fine-Tuning",
       "LoRA", "Hugging Face", "Unsloth", "LangGraph", "LangChain",
       "ChromaDB", "LangFuse", "OpenRouter", "Ollama",
-      "MLflow", "Dagster", "XGBoost", "Pandas", "Jupyter",
-      "Apprentissage automatique", "Bases de vecteurs",
+      "MLflow", "FASTAPI", "XGBoost", "Pandas", "Jupyter",
+      "Apprentissage automatique", "Lora Adapter",
       "OpenStack", "Kubernetes", "Terraform", "Docker",
-      "Vue.js", "FastAPI", "JWT",
+      "Vue.js", "FastAPI", "Fine-Tune",
       "Prometheus", "Grafana"
     ]
   },

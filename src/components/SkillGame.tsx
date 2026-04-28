@@ -10,10 +10,10 @@ interface Skill {
 
 const skills = [
   "Python", "LLMs", "RAG", "Prompt Engineering",
-  "LangGraph", "MLflow", "Dagster", "OpenStack",
+  "LangGraph", "MLflow", "FASTAPI", "OpenStack",
   "Kubernetes", "Terraform", "Vue.js", "Docker",
   "Prometheus", "Grafana", "C", "JavaScript",
-  "Jupyter", "Vector Stores", "JWT", "Machine Learning",
+  "Jupyter", "Lora Adapter", "Fine-Tune", "Machine Learning",
   "Knowledge Graph"
 ];
 
