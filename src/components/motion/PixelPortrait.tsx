@@ -62,10 +62,12 @@ export function PixelPortrait({
     >
       <div
         aria-hidden="true"
-        className="absolute inset-0 grid gap-[1px]"
+        className="absolute inset-0 grid gap-[1px] transition-opacity duration-700"
         style={{
           gridTemplateColumns: `repeat(${data.cols}, 1fr)`,
           gridTemplateRows: `repeat(${data.rows}, 1fr)`,
+          opacity: finalImageSrc && done ? 0 : 1,
+          pointerEvents: 'none',
         }}
       >
         {data.cells.map((tier, i) => (
