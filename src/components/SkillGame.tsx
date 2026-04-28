@@ -151,7 +151,7 @@ const SkillGame = () => {
             <span className="text-foreground leading-tight">{skill.name}</span>
           </div>
 
-          {/* Back face — sparkle while flipping */}
+          {/* Back face, sparkle while flipping */}
           <div
             className="absolute inset-0 flex items-center justify-center
                        bg-card/80 border border-primary/30 rounded-md
@@ -228,7 +228,7 @@ const SkillGame = () => {
 
           <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
             Choose any skill from the 21 below and remember it. I'll ask which line it's
-            in (1, 2, or 3) for three rounds. If I guess it correctly — you know the deal.
+            in (1, 2, or 3) for three rounds. If I guess it correctly, you know the deal.
           </p>
 
           <p className="text-primary font-mono text-sm md:text-base">
@@ -361,13 +361,13 @@ const SkillGame = () => {
           <div className="space-y-4 animate-[revealFade_400ms_ease-out_900ms_both]">
             <p className="text-lg md:text-xl text-muted-foreground">Was I right? ✨</p>
             <p className="font-mono text-sm md:text-base text-primary">
-              [ MIND_READ_OK ] · guessed in 3 rounds — pay up.
+              [ MIND_READ_OK ] · guessed in 3 rounds, pay up.
             </p>
             <div className="flex gap-3 md:gap-4 justify-center flex-wrap">
               <Button
                 variant="gold"
                 size="lg"
-                onClick={() => window.open(socialLinks.linkedin, '_blank', 'noopener,noreferrer')}
+                onClick={() => window.open(socialLinks.linkedin, '_blank', 'noopener, noreferrer')}
                 className="font-mono text-base md:text-lg px-6 md:px-8"
                 data-cursor="link"
               >

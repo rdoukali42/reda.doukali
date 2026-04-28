@@ -8,10 +8,10 @@
     "contact": "Contact"
   },
   "hero": {
-    "badge": "Ouvert aux postes Applied AI / AI Security — UE ou télétravail",
+    "badge": "Ouvert aux postes Applied AI / AI Security, UE ou télétravail",
     "title": "Applied AI Engineer",
     "subtitle": "Sécurité LLM · Systèmes Multi-Agents",
-    "description": "Je conçois des systèmes LLM qui tiennent face à la pression du monde réel — de l'évaluation sécurité et la détection de jailbreak aux workflows multi-agents qui passent en production.",
+    "description": "Je conçois des systèmes LLM qui tiennent face à la pression du monde réel, de l'évaluation sécurité et la détection de jailbreak aux workflows multi-agents qui passent en production.",
     "viewWork": "Voir mon travail",
     "getInTouch": "Me contacter"
   },
@@ -19,9 +19,9 @@
     "label": "À propos de moi",
     "title": "Transformer les idées en",
     "titleHighlight": " systèmes intelligents",
-    "paragraph1": "La plupart des applications LLM s'effondrent dès qu'elles rencontrent une entrée adversariale. Je construis celles qui tiennent. En tant qu'Applied AI Engineer, je travaille à l'intersection des LLMs, des systèmes multi-agents et de la sécurité IA — en concevant des systèmes qui survivent au contact de la réalité, et pas seulement à des démos.",
+    "paragraph1": "La plupart des applications LLM s'effondrent dès qu'elles rencontrent une entrée adversariale. Je construis celles qui tiennent. En tant qu'Applied AI Engineer, je travaille à l'intersection des LLMs, des systèmes multi-agents et de la sécurité IA, en concevant des systèmes qui survivent au contact de la réalité, et pas seulement à des démos.",
     "paragraph2": "Au cours des 18 derniers mois, j'ai livré quelques projets dont je suis vraiment fier : SecEval, un framework d'évaluation de sécurité LLM agnostique au modèle, construit avec Aleph Alpha ; LyraixGuard, un modèle de détection de jailbreak fine-tuné sur Qwen3-4B avec LoRA pour le blocage de menaces en temps réel en entreprise ; des systèmes de support multi-agents sur LangGraph avec RAG et tracing LangFuse de bout en bout ; et une plateforme DBaaS basée sur Kubernetes sur OpenStack avec authentification JWT/OIDC complète.",
-    "paragraph3": "Avant les LLMs, j'ai livré du front-end chez Cegedim et passé deux ans à entraîner des modèles de coding IA chez Outlier — où j'ai compris que le prompt engineering, c'est surtout de l'ingénierie avec des messages d'erreur en moins. Ce que j'apporte : exécution de niveau production, évaluation pensée avant le déploiement, et sécurité traitée comme une préoccupation de premier rang, pas une réflexion après coup.",
+    "paragraph3": "Avant les LLMs, j'ai livré du front-end chez Cegedim et passé deux ans à entraîner des modèles de coding IA chez Outlier, où j'ai compris que le prompt engineering, c'est surtout de l'ingénierie avec des messages d'erreur en moins. Ce que j'apporte : exécution de niveau production, évaluation pensée avant le déploiement, et sécurité traitée comme une préoccupation de premier rang, pas une réflexion après coup.",
     "viewLinkedIn": "Voir le profil LinkedIn",
     "cards": {
       "aiml": {
@@ -124,7 +124,7 @@
       {
         "title": "LyraixGuard",
         "category": "Sécurité LLM · Fine-Tuning",
-        "description": "Un classificateur de sécurité IA d'entreprise qui agit comme gardien entre les utilisateurs et les systèmes LLM, classifiant les messages en Safe / Unsafe / Controversial sur 13 catégories d'attaque (prompt injection, agent hijacking, exfiltration RAG, vol de credentials, et plus). Fine-tune LoRA de Qwen3-4B (66M paramètres entraînables, 1,62 %) sur un dataset bilingue EN/DE de 120k échantillons. Introduit l'\"intended-output reasoning\" — une méthodologie d'entraînement où le modèle apprend à reconstruire ce que l'IA cible produirait, puis classifie la sécurité à partir de cette sortie reconstruite. Atteint 99,8 % de précision en no-think mode, 97,0 % de recall sur Lakera Gandalf, et 0,940 F1 sur SafeGuard-PI — surpassant LlamaGuard, ShieldGemma et AprielGuard.",
+        "description": "Un classificateur de sécurité IA d'entreprise qui agit comme gardien entre les utilisateurs et les systèmes LLM, classifiant les messages en Safe / Unsafe / Controversial sur 13 catégories d'attaque (prompt injection, agent hijacking, exfiltration RAG, vol de credentials, et plus). Fine-tune LoRA de Qwen3-4B (66M paramètres entraînables, 1,62 %) sur un dataset bilingue EN/DE de 120k échantillons. Introduit l'\"intended-output reasoning\", une méthodologie d'entraînement où le modèle apprend à reconstruire ce que l'IA cible produirait, puis classifie la sécurité à partir de cette sortie reconstruite. Atteint 99,8 % de précision en no-think mode, 97,0 % de recall sur Lakera Gandalf, et 0,940 F1 sur SafeGuard-PI, surpassant LlamaGuard, ShieldGemma et AprielGuard.",
         "madeFor": "Lyraix (Independent Research)",
         "tags": ["Qwen3", "LoRA", "Unsloth", "Hugging Face", "Fine-Tuning", "LLM Security", "CoT"]
       },

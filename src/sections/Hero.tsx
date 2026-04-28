@@ -61,7 +61,7 @@ const Hero = () => {
 
             <PixelPortrait
               finalImageSrc={goldMe}
-              alt="Reda Doukali — Applied AI Engineer"
+              alt="Reda Doukali, Applied AI Engineer"
               duration={1600}
               delay={300}
               className="w-full"
