@@ -12,32 +12,47 @@ const Hero = () => {
 
   return (
     <section
-      className="relative min-h-[100dvh] flex items-center overflow-hidden"
+      className="relative min-h-[100svh] lg:min-h-[100dvh] overflow-hidden"
       id="hero"
       aria-labelledby="hero-heading"
     >
       <GridReveal className="absolute inset-0" opacity={0.4} />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 w-full grid lg:grid-cols-12 gap-8 items-center py-20 sm:py-24">
-        {/* Text — full width below lg:, 7/12 at lg: */}
-        <div className="lg:col-span-7 max-w-full">
-          <div className="inline-flex items-center gap-2 mb-5 sm:mb-6 px-3 py-1.5 rounded-sm bg-card/40 border border-primary/30 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-primary/90 max-w-full">
-            <span className="w-1 h-1 rounded-full bg-primary shrink-0" aria-hidden="true" />
-            <span className="truncate">[ {t.hero.badge} ]</span>
+      <div
+        className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 w-full
+                   grid lg:grid-cols-12 gap-8 lg:gap-10 lg:items-center
+                   pt-24 sm:pt-28 pb-14 sm:pb-20 lg:min-h-[100dvh]"
+      >
+        {/* Text */}
+        <div className="lg:col-span-8 max-w-full min-w-0">
+          <div
+            className="inline-flex items-start sm:items-center gap-2 mb-5 sm:mb-6 px-3 py-1.5
+                       rounded-sm bg-card/40 border border-primary/30 font-mono
+                       text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-primary/90
+                       max-w-full"
+          >
+            <span
+              className="w-1 h-1 rounded-full bg-primary shrink-0 mt-1.5 sm:mt-0"
+              aria-hidden="true"
+            />
+            <span className="break-words">[ {t.hero.badge} ]</span>
           </div>
 
           <h1
             id="hero-heading"
-            className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-bold mb-5 sm:mb-6 leading-[0.95] break-words"
+            className="font-bold mb-5 sm:mb-6 leading-[0.95] break-words hyphens-auto
+                       text-[clamp(2rem,8vw,3rem)] sm:text-5xl md:text-6xl xl:text-7xl"
           >
-            {t.hero.title}
-            <br />
-            <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent bg-[length:200%_auto]">
+            <span className="block">{t.hero.title}</span>
+            <span
+              className="block bg-gradient-to-r from-primary via-accent to-primary
+                         bg-clip-text text-transparent bg-[length:200%_auto]"
+            >
               {t.hero.subtitle}
             </span>
           </h1>
 
-          <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8 sm:mb-10 max-w-3xl">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-7 sm:mb-10 max-w-2xl">
             {t.hero.description}
           </p>
 
@@ -60,10 +75,10 @@ const Hero = () => {
         </div>
 
         {/* Pixel Portrait — only at lg:+ where it can sit beside the headline */}
-        <div className="hidden lg:block lg:col-span-5 relative">
-          <div className="relative max-w-md mx-auto">
+        <div className="hidden lg:block lg:col-span-4 relative">
+          <div className="relative max-w-sm xl:max-w-md mx-auto">
             <div
-              className="absolute -top-3 -left-3 font-mono text-[10px] uppercase tracking-[0.3em] text-primary/70"
+              className="absolute -top-3 -left-3 font-mono text-[10px] uppercase tracking-[0.3em] text-primary/70 z-10"
               aria-hidden="true"
             >
               <TypewriterText text="[ BUILDING REDA ]" speed={45} immediate />
