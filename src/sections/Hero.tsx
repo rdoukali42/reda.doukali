@@ -12,7 +12,7 @@ const Hero = () => {
 
   return (
     <section
-      className="relative min-h-[100svh] lg:min-h-[100dvh] overflow-hidden"
+      className="relative lg:min-h-[100dvh] overflow-hidden"
       id="hero"
       aria-labelledby="hero-heading"
     >
@@ -21,7 +21,7 @@ const Hero = () => {
       <div
         className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 w-full
                    grid lg:grid-cols-12 gap-8 lg:gap-10 lg:items-center
-                   pt-24 sm:pt-28 pb-14 sm:pb-20 lg:min-h-[100dvh]"
+                   pt-24 sm:pt-28 pb-12 sm:pb-16 lg:min-h-[100dvh]"
       >
         {/* Text */}
         <div className="lg:col-span-8 max-w-full min-w-0">
