@@ -8,10 +8,10 @@
     "contact": "Kontakt"
   },
   "hero": {
-    "badge": "Offen für Applied AI / AI-Security-Rollen — EU oder remote",
+    "badge": "Offen für Applied AI / AI-Security-Rollen, EU oder remote",
     "title": "Applied AI Engineer",
     "subtitle": "LLM-Sicherheit · Multi-Agenten-Systeme",
-    "description": "Ich entwerfe LLM-Systeme, die unter realem Druck standhalten — von Security-Evaluierung und Jailbreak-Detection bis zu Multi-Agenten-Workflows, die tatsächlich in Produktion gehen.",
+    "description": "Ich entwerfe LLM-Systeme, die unter realem Druck standhalten, von Security-Evaluierung und Jailbreak-Detection bis zu Multi-Agenten-Workflows, die tatsächlich in Produktion gehen.",
     "viewWork": "Meine Arbeit ansehen",
     "getInTouch": "Kontakt aufnehmen"
   },
@@ -19,9 +19,9 @@
     "label": "Über mich",
     "title": "Ideen in",
     "titleHighlight": " intelligente Systeme verwandeln",
-    "paragraph1": "Die meisten LLM-Anwendungen brechen in dem Moment zusammen, in dem sie auf adversariale Eingaben treffen. Ich baue die, die das nicht tun. Als Applied AI Engineer arbeite ich an der Schnittstelle von LLMs, Multi-Agenten-Systemen und KI-Sicherheit — und entwerfe Systeme, die den Kontakt mit der Realität überleben, nicht nur Demos.",
+    "paragraph1": "Die meisten LLM-Anwendungen brechen in dem Moment zusammen, in dem sie auf adversariale Eingaben treffen. Ich baue die, die das nicht tun. Als Applied AI Engineer arbeite ich an der Schnittstelle von LLMs, Multi-Agenten-Systemen und KI-Sicherheit, und entwerfe Systeme, die den Kontakt mit der Realität überleben, nicht nur Demos.",
     "paragraph2": "In den letzten 18 Monaten habe ich einige Dinge ausgeliefert, auf die ich wirklich stolz bin: SecEval, ein modellunabhängiges LLM-Security-Evaluation-Framework, gebaut mit Aleph Alpha; LyraixGuard, ein Jailbreak-Detection-Modell, mit LoRA auf Qwen3-4B feinabgestimmt für Echtzeit-Bedrohungsabwehr im Enterprise-Kontext; Multi-Agenten-Supportsysteme auf LangGraph mit RAG und durchgängigem LangFuse-Tracing; und eine Kubernetes-basierte DBaaS-Plattform auf OpenStack mit vollständiger JWT/OIDC-Authentifizierung.",
-    "paragraph3": "Vor den LLMs habe ich Frontend bei Cegedim ausgeliefert und zwei Jahre AI-Coding-Modelle bei Outlier trainiert — und dort verstanden, dass Prompt Engineering vor allem Engineering mit schlechteren Fehlermeldungen ist. Was ich mitbringe: produktionsreife Umsetzung, Evaluierung schon vor dem Deployment, und Sicherheit als Anliegen erster Klasse, nicht als nachträgliche Ergänzung.",
+    "paragraph3": "Vor den LLMs habe ich Frontend bei Cegedim ausgeliefert und zwei Jahre AI-Coding-Modelle bei Outlier trainiert, und dort verstanden, dass Prompt Engineering vor allem Engineering mit schlechteren Fehlermeldungen ist. Was ich mitbringe: produktionsreife Umsetzung, Evaluierung schon vor dem Deployment, und Sicherheit als Anliegen erster Klasse, nicht als nachträgliche Ergänzung.",
     "viewLinkedIn": "LinkedIn-Profil ansehen",
     "cards": {
       "aiml": {
@@ -77,7 +77,7 @@
         "title": "Machine Learning Ingenieur",
         "duration": "Mai 2025 - Jun 2025 · 2 Monate",
         "company": "Arkadia Heilbronn",
-        "description": "Erforschte Datenbeziehungen, trainierte ML-Modelle, stellte sie in MLflow bereit und automatisierte Workflows mit Dagster für produktionsreife MLOps. Erstellte eine Pipeline, die automatisch bei Eintreffen neuer Daten ausgelöst wird – ein vollautomatisches System.",
+        "description": "Erforschte Datenbeziehungen, trainierte ML-Modelle, stellte sie in MLflow bereit und automatisierte Workflows mit Dagster für produktionsreife MLOps. Erstellte eine Pipeline, die automatisch bei Eintreffen neuer Daten ausgelöst wird, ein vollautomatisches System.",
         "collaboration": "",
         "tags": ["Python", "MLflow", "Dagster", "Jupyter", "Scikit-Learn"]
       },
@@ -124,7 +124,7 @@
       {
         "title": "LyraixGuard",
         "category": "LLM-Sicherheit · Fine-Tuning",
-        "description": "Ein Enterprise-KI-Sicherheitsklassifikator, der als Gatekeeper zwischen Nutzern und LLM-Systemen fungiert und Nachrichten als Safe / Unsafe / Controversial über 13 Angriffskategorien klassifiziert (Prompt Injection, Agent Hijacking, RAG-Datenexfiltration, Credential Theft und mehr). LoRA-Fine-Tune von Qwen3-4B (66M trainierbare Parameter, 1,62 %) auf einem zweisprachigen EN/DE-Datensatz mit 120k Samples. Führt \"Intended-Output Reasoning\" ein — eine Trainingsmethodik, bei der das Modell rekonstruiert, was die Ziel-KI ausgeben würde, und dann die Sicherheit aus dieser rekonstruierten Ausgabe klassifiziert. Erreicht 99,8 % Accuracy im No-Think-Modus, 97,0 % Recall auf Lakera Gandalf und 0,940 F1 auf SafeGuard-PI — und übertrifft LlamaGuard, ShieldGemma und AprielGuard.",
+        "description": "Ein Enterprise-KI-Sicherheitsklassifikator, der als Gatekeeper zwischen Nutzern und LLM-Systemen fungiert und Nachrichten als Safe / Unsafe / Controversial über 13 Angriffskategorien klassifiziert (Prompt Injection, Agent Hijacking, RAG-Datenexfiltration, Credential Theft und mehr). LoRA-Fine-Tune von Qwen3-4B (66M trainierbare Parameter, 1,62 %) auf einem zweisprachigen EN/DE-Datensatz mit 120k Samples. Führt \"Intended-Output Reasoning\" ein, eine Trainingsmethodik, bei der das Modell rekonstruiert, was die Ziel-KI ausgeben würde, und dann die Sicherheit aus dieser rekonstruierten Ausgabe klassifiziert. Erreicht 99,8 % Accuracy im No-Think-Modus, 97,0 % Recall auf Lakera Gandalf und 0,940 F1 auf SafeGuard-PI, und übertrifft LlamaGuard, ShieldGemma und AprielGuard.",
         "madeFor": "Lyraix (Independent Research)",
         "tags": ["Qwen3", "LoRA", "Unsloth", "Hugging Face", "Fine-Tuning", "LLM Security", "CoT"]
       },
@@ -186,10 +186,10 @@
       "LLMs", "RAG", "Prompt Engineering", "KI-Sicherheit", "Fine-Tuning",
       "LoRA", "Hugging Face", "Unsloth", "LangGraph", "LangChain",
       "ChromaDB", "LangFuse", "OpenRouter", "Ollama",
-      "MLflow", "Dagster", "XGBoost", "Pandas", "Jupyter",
-      "Maschinelles Lernen", "Vektorspeicher",
+      "MLflow", "FASTAPI", "XGBoost", "Pandas", "Jupyter",
+      "Maschinelles Lernen", "Lora Adapter",
       "OpenStack", "Kubernetes", "Terraform", "Docker",
-      "Vue.js", "FastAPI", "JWT",
+      "Vue.js", "FastAPI", "Fine-Tune",
       "Prometheus", "Grafana"
     ]
   },
